@@ -1,11 +1,115 @@
-/*import path defined in gulp task by providing camel case version of ruby sass option - loadPath [<path>]*/
 
 // Import bootstrap and fontawesome
 @import "bootstrap";
 @import "font-awesome";
+@import "etp-var";
+//@import "etp-mixins";
+
+.float-left{
+    float:left;
+}
+.float-right{
+    float:right;
+}
+.clear-both{
+    clear:both;
+}
 
 
 .test{
     margin:1px;
     border:1px solid black;
+    border-radius:5px;
+}
+
+/*header block styles*/
+header.main-header{
+    position:relative;
+    z-index:#{$headerZ};
+    overflow:auto;
+    width:100%;
+    min-height:#{$headerH};
+    background:#{$headerBackgroundC};
+
+    .logo{
+        float:left;
+        margin:10px 0 0 10px;
+    }
+    .time, .account {
+        float:right;
+        color:#{$etpWhite};
+        > div {
+        display:inline-block;
+        }
+     }
+    .account{
+        .acc-img {
+        border:2px solid #{$etpWhite};
+        border-radius:50%;
+        width:60px;
+        height:60px;
+        }           
+        >*{
+            margin:5px 15px;
+            display:inline-block;
+        }
+        i {
+        margin:0 10px 0 0;
+        }
+    }
+    .site-title{
+        color:#{$etpWhite};
+    }
+}
+
+/*aside block styles*/
+
+aside.sidebar{
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:#{$asideZ};
+    padding:#{$headerH} 0 #{$footerH} 0;
+    
+    height:100%;
+    background:#{$asideBackgroundColor};
+}
+
+.sidebar-expanded aside.sidebar{
+    width:#{$asideWExpanded};
+}
+
+.sidebar-collapsed aside.sidebar{
+    width:#{$asideWCollapsed};
+}
+
+
+/*content block styles*/
+
+div.content {
+    position:relative;
+    z-index:#{$contentZ};
+}
+
+.sidebar-expanded div.content{
+    margin-left:#{$asideWExpanded};
+}
+
+.sidebar-collapsed div.content{
+    margin-left:#{$asideWCollapsed};
+}
+
+/*footer block styles*/
+footer {
+    position:relative;
+    z-index:#{$footerZ};
+    height:#{$footerH};
+}
+
+.sidebar-expanded footer{
+    margin-left:#{$asideWExpanded};
+}
+
+.sidebar-collapsed footer{
+    margin-left:#{$asideWCollapsed};
 }

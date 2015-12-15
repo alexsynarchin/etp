@@ -1,9 +1,10 @@
-var 	gulp = require('gulp'),
-		sass = require('gulp-ruby-sass'),
-		notify = require("gulp-notify"),
-		bower = require('gulp-bower'),
-        jade = require('gulp-jade'),
-        minifyCss = require('gulp-minify-css');
+var
+    gulp = require('gulp'),
+    sass = require('gulp-ruby-sass'),
+    notify = require("gulp-notify"),
+	bower = require('gulp-bower'),
+    jade = require('gulp-jade'),
+    minifyCss = require('gulp-minify-css');
 
 var config = {
     sassPath: './src/sass',
@@ -21,7 +22,7 @@ gulp.task('watch', function () {
 });
 
 /*build sequence*/
-gulp.task('build', ['css','html','js'], function() {
+gulp.task('build', ['css','html','js_app'], function() {
 		console.log('building here');
 });
 
@@ -86,9 +87,3 @@ gulp.task('iconsFa', function() {
     return gulp.src(config.bowerDir + '/font-awesome/fonts/**.*')
         .pipe(gulp.dest('./public/fonts'));
 });
-gulp.task('jquery', function() {
-    return gulp.src(config.bowerDir + '/jquery/dist/jquery.min.js')
-    .pipe(gulp.dest('./src/js/'));
-});
-
-
