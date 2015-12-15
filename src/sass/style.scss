@@ -1,0 +1,11 @@
+/*import path defined in gulp task by providing camel case version of ruby sass option - loadPath [<path>]*/
+
+// Import bootstrap and fontawesome
+@import "bootstrap";
+@import "font-awesome";
+
+
+.test{
+    margin:1px;
+    border:1px solid black;
+}
