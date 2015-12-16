@@ -1,0 +1,98 @@
+﻿/*General styles*/
+header.main-header{
+    min-width:$total-min-width;
+    position:relative;
+    z-index:$header-z;
+    overflow:hidden;
+    width:100%;
+    height:$header-h;
+    background:$header-background-c;
+    .logo-header{
+        float:left;
+        &__img-lg{
+            margin-right:20px;
+        }
+        &__img-xs{
+            margin-right:20px;
+        }
+        &__site-title{
+            color:$etp-white;
+        }
+    }
+    .time-header{
+        color:$etp-white;
+    }
+    .account-header{
+        float:right;
+        color:$etp-white;
+        &__image {
+            display:inline-block;
+            border:2px solid $etp-white;
+            border-radius:50%;
+            width:50px;
+            height:50px;
+        }           
+        &__menu {
+            margin:0 0 0 15px;
+            display:inline-block;
+            i {
+                margin:0 10px;
+            }           
+        }
+    }
+}
+
+/*Adaptive behaviour*/
+
+@include media(">750px"){
+    header.main-header{
+        .logo-header{
+            width:240px;
+            transition: transform 0.3s ease-in-out 0s, width 0.3s ease-in-out 0s;
+            padding: 10px 0 0 10px;
+            &__img-lg{
+                display:visible;
+            }
+            &__img-xs{
+                display:none;
+            }
+        }
+        .time-header {
+            margin:25px 10px 0 0;
+            float:right;
+         }
+        .account-header{
+            margin:25px 10px 0 0;
+
+        }
+    }
+}
+
+@include media("<=750px"){
+    header.main-header{
+        .logo-header{
+            transition: transform 0.3s ease-in-out 0s, width 0.3s ease-in-out 0s;
+            padding: 0 0 0 10px;
+            background:$header-background-xs-color;
+            width:100%;
+            &__img-lg{
+                display:none;
+            }
+            &__img-xs{
+                display:visible;
+            }
+            &__site-title{
+                display:inline-block;
+            }
+        }
+        .account-header {
+            margin:8px 10px 0 0;
+         }
+        .time-header {
+            position:absolute;
+            top:0px;
+            right:12px;
+        }
+    }
+}
+

@@ -19,6 +19,7 @@
   "dependencies": {
     "bootstrap-sass": "bootstrap-sass-official#~3.3.6",
     "font-awesome": "fontawesome#~4.5.0",
-    "requirejs-plugins": "~1.0.3"
+    "requirejs-plugins": "~1.0.3",
+    "jquery-ui": "~1.11.4"
   }
 }

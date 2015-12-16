@@ -1,20 +1,17 @@
 ﻿header.main-header
-    a.logo(href="#")
-        img.logo-img(src="#{logoUrl}")
-        div.site-title= siteTitle
-    div.account
-        img.acc-img(src="#{accImgUrl}")
-        div.account-menu
-            h6 Вы авторизованы на торговой площадке
-            h4 Соколов Д.В.
-            div.accout-controls
-                div.float-left
-                    i.fa.fa-cog
-                    span Настройки
-                div.float-right
+    a.logo-header(href="#")
+        img.logo-header__img-lg(src="#{logoUrlLg}")
+        img.logo-header__img-xs(src="#{logoUrlXs}")
+        h5.logo-header__site-title= siteTitle
+    div.account-header
+        img.account-header__image(src="#{accImgUrl}")
+        div.account-header__menu
+            span Соколов Д.В.
+            div.float-right
                     i.fa.fa-sign-out
                     span Выход
-    div.time
-        h6 Время сервера:
+                
+    div.time-header
+        h6.block-xs-hidden Время сервера:
         h5 19:08  12 января 2016 г.
    

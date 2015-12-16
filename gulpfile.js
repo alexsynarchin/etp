@@ -50,7 +50,7 @@ gulp.task('html', function() {
 });
 
 /*build js*/
-gulp.task('js', ['js_app','js_jquery','js_bootstrap','js_require','js_bootstrap-plugins'], function() {
+gulp.task('js', ['js_app','js_jquery','js_jquery-ui','js_bootstrap','js_require','js_bootstrap-plugins'], function() {
 });
 
 gulp.task('js_app', function() {
@@ -59,6 +59,10 @@ gulp.task('js_app', function() {
 });
 gulp.task('js_jquery', function() {
     return gulp.src(config.bowerDir + '/jquery/dist/jquery.min.js')
+    .pipe(gulp.dest('./public/js/'));
+});
+gulp.task('js_jquery-ui', function() {
+    return gulp.src(config.bowerDir + '/jquery-ui/jquery-ui.min.js')
     .pipe(gulp.dest('./public/js/'));
 });
 gulp.task('js_bootstrap', function() {

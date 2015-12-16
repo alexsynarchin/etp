@@ -1,0 +1,33 @@
+﻿footer {
+    background:linear-gradient(0deg, rgba(75, 91, 119, 1) 0%, rgba(75, 91, 119, 1) 70%, rgba(60, 68, 82, 1) 100%);
+    color:$etp-white-c;
+    position:relative;
+    z-index:$footer-z;
+    height:$footer-h;
+}
+
+@include media(">750px"){
+    footer{
+        transition: transform 0.3s ease-in-out 0s, margin 0.3s ease-in-out 0s;
+        margin-left:$aside-w-expanded;
+    }
+    .sidebar-expanded footer{
+        margin-left:$aside-w-expanded;
+    } 
+    .sidebar-collapsed footer{
+        margin-left:$aside-w-collapsed;
+    }
+}
+
+@include media("<=750px"){
+    footer{
+        transition: transform 0.3s ease-in-out 0s, margin 0.3s ease-in-out 0s;
+        margin-left:$aside-w-collapsed;
+    }
+    .sidebar-expanded footer{
+        margin-left:$aside-w-expanded;
+    } 
+    .sidebar-collapsed footer{
+        margin-left:$aside-w-collapsed;
+    }
+}

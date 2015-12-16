@@ -1,0 +1,107 @@
+﻿.sidebar{
+    transition: transform 0.3s ease-in-out 0s, width 0.3s ease-in-out 0s;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:$aside-z; 
+    padding:$header-h 0 $footer-h 0;
+    
+    height:100%;
+    background:$aside-background-color;
+    
+    &__toggle {
+        height:36px;
+        background:$etp-grey;
+        display:block;
+        width:100%;
+        text-align:right;
+        i {
+            margin:5px 15px 5px 0px;
+            color:$etp-white;
+            font-size:24px;
+        }
+    }
+    &__toggle:focus {
+        outline: 0;
+    }
+    &__menu {
+        ul{
+            list-style-type: none;
+            padding:0;
+            > li{
+                white-space:nowrap;
+                overflow:hidden;
+                height:36px;
+                > a{
+                    color:$etp-text-dark;
+                    cursor:pointer;
+                    display:block;
+                    height:100%;
+                    > i{
+                        width:25px;
+                        margin:5px 0 5px 15px;
+                        font-size:20px;
+                    }
+                }
+                > a:hover{
+                    background:solid $etp-dark-grey-c;
+                    color:$etp-yellow-c;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+
+/*todo adaptive behaviour*/
+@include media(">750px"){
+    .sidebar{
+        width:$aside-w-expanded;
+    }
+    .sidebar-collapsed .sidebar{
+        width:$aside-w-collapsed !important;
+        &__menu {
+            ul{
+                > li{
+                    > a{
+                        > span {
+                            visibility:hidden !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media("<=750px"){
+    .sidebar{
+        width:$aside-w-collapsed;
+        &__menu {
+            ul{
+                > li{
+                    > a{
+                        > span {
+                            visibility:hidden;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sidebar-expanded .sidebar{
+        width:$aside-w-expanded !important;
+        &__menu {
+            ul{
+                > li{
+                    > a{
+                        > span {
+                            visibility:visible !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

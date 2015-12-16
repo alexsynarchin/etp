@@ -3,7 +3,19 @@
 @import "bootstrap";
 @import "font-awesome";
 @import "etp-var";
+
+
+///generate media queries mixin by Eduardo Boucas
+@import "media-mixin";
+/*
+example 
+@include media(">400px","<=500px"){}   ==>  @media (min-width:401px) and (max-width:500px)
+example2
+@include media(">tablet", "<=desktop", "retina2x") {
+*/
+
 //@import "etp-mixins";
+
 
 .float-left{
     float:left;
@@ -14,102 +26,24 @@
 .clear-both{
     clear:both;
 }
+/*adaptive classes*/
 
-
-.test{
-    margin:1px;
-    border:1px solid black;
-    border-radius:5px;
+/*hide some insignificant staff on low resolution*/
+@include media("<=750px"){
+    .block-xs-hidden{
+        display:none;
+    }
 }
 
 /*header block styles*/
-header.main-header{
-    position:relative;
-    z-index:#{$headerZ};
-    overflow:auto;
-    width:100%;
-    min-height:#{$headerH};
-    background:#{$headerBackgroundC};
-
-    .logo{
-        float:left;
-        margin:10px 0 0 10px;
-    }
-    .time, .account {
-        float:right;
-        color:#{$etpWhite};
-        > div {
-        display:inline-block;
-        }
-     }
-    .account{
-        .acc-img {
-        border:2px solid #{$etpWhite};
-        border-radius:50%;
-        width:60px;
-        height:60px;
-        }           
-        >*{
-            margin:5px 15px;
-            display:inline-block;
-        }
-        i {
-        margin:0 10px 0 0;
-        }
-    }
-    .site-title{
-        color:#{$etpWhite};
-    }
-}
+@import "blocks/header";
 
 /*aside block styles*/
-
-aside.sidebar{
-    position:absolute;
-    left:0;
-    top:0;
-    z-index:#{$asideZ};
-    padding:#{$headerH} 0 #{$footerH} 0;
-    
-    height:100%;
-    background:#{$asideBackgroundColor};
-}
-
-.sidebar-expanded aside.sidebar{
-    width:#{$asideWExpanded};
-}
-
-.sidebar-collapsed aside.sidebar{
-    width:#{$asideWCollapsed};
-}
-
+@import "blocks/aside";
 
 /*content block styles*/
-
-div.content {
-    position:relative;
-    z-index:#{$contentZ};
-}
-
-.sidebar-expanded div.content{
-    margin-left:#{$asideWExpanded};
-}
-
-.sidebar-collapsed div.content{
-    margin-left:#{$asideWCollapsed};
-}
+@import "blocks/content";
 
 /*footer block styles*/
-footer {
-    position:relative;
-    z-index:#{$footerZ};
-    height:#{$footerH};
-}
+@import "blocks/footer";
 
-.sidebar-expanded footer{
-    margin-left:#{$asideWExpanded};
-}
-
-.sidebar-collapsed footer{
-    margin-left:#{$asideWCollapsed};
-}

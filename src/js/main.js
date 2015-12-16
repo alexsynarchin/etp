@@ -2,7 +2,9 @@ requirejs.config({
     baseUrl: 'js',
     paths: {
         jquery: 'jquery.min',
-        bootstrap: 'bootstrap.min'
+        jqueryui: 'jquery-ui.min',
+        bootstrap: 'bootstrap.min',
+        etpAdaptiveBehaviour: 'etpAdaptiveBehaviour'
     },
     shim: {
         'bootstrap':{deps: ['jquery']}
@@ -10,9 +12,13 @@ requirejs.config({
 });
  
 requirejs([
-    'jquery', 
-    'bootstrap'
-    ], function($, _bootstrap){
+    'jquery',
+    'jqueryui',
+    'bootstrap',
+    'etpAdaptiveBehaviour'
+    ], function($, _jqueryui, _bootstrap, aB){
+        aB.addEvents(); //add some test events
+        
         // this is where all the site code should begin
         return {};
 });

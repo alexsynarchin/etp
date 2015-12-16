@@ -1,0 +1,30 @@
+﻿div.content {
+    position:relative;
+    z-index:$content-z;
+}
+
+@include media(">750px"){
+    div.content{
+        transition: transform 0.3s ease-in-out 0s, margin 0.3s ease-in-out 0s;
+        margin-left:$aside-w-expanded;
+    }
+    .sidebar-expanded div.content{
+        margin-left:$aside-w-expanded;
+    } 
+    .sidebar-collapsed div.content{
+        margin-left:$aside-w-collapsed;
+    } 
+}
+
+@include media("<=750px"){
+    div.content{
+        transition: transform 0.3s ease-in-out 0s, margin 0.3s ease-in-out 0s;
+        margin-left:$aside-w-collapsed;
+    }
+    .sidebar-expanded div.content{
+        margin-left:$aside-w-expanded;
+    } 
+    .sidebar-collapsed div.content{
+        margin-left:$aside-w-collapsed;
+    } 
+}

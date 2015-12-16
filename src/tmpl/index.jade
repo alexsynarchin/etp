@@ -1,9 +1,10 @@
 ﻿include ./includes/head
-body.sidebar-expanded
+body
     div.wrapper
-        include ./includes/header
-        aside.sidebar
-            span= filler
+
+        include ./includes/header       
+        include ./includes/aside
+
         div.content
             div.container-fluid
                 div.row
@@ -11,7 +12,7 @@ body.sidebar-expanded
                         span= filler
                     div.col-sm-6.col-xs-12
                         span= filler
+                    
         footer
-            span= filler
             
     
