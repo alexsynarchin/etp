@@ -1,9 +1,10 @@
 ﻿div.content {
+    background:$content-background-c;
     position:relative;
     z-index:$content-z;
 }
 
-@include media(">750px"){
+@include media(">tablet"){
     div.content{
         transition: transform 0.3s ease-in-out 0s, margin 0.3s ease-in-out 0s;
         margin-left:$aside-w-expanded;
@@ -16,7 +17,7 @@
     } 
 }
 
-@include media("<=750px"){
+@include media("<=tablet"){
     div.content{
         transition: transform 0.3s ease-in-out 0s, margin 0.3s ease-in-out 0s;
         margin-left:$aside-w-collapsed;
@@ -27,4 +28,22 @@
     .sidebar-collapsed div.content{
         margin-left:$aside-w-collapsed;
     } 
+}
+/*vertical rhythm*/
+.content {
+    .row {
+        margin-top:15px;
+        .placeholder{
+        margin-bottom:15px;
+        }
+    }
+}
+
+/*placeholders*/
+.content {
+    .placeholder{
+    display:block;
+    background:$etp-grey;
+    color:$etp-grey;
+    }
 }

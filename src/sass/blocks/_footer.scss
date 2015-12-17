@@ -6,7 +6,7 @@
     height:$footer-h;
 }
 
-@include media(">750px"){
+@include media(">tablet"){
     footer{
         transition: transform 0.3s ease-in-out 0s, margin 0.3s ease-in-out 0s;
         margin-left:$aside-w-expanded;
@@ -19,7 +19,7 @@
     }
 }
 
-@include media("<=750px"){
+@include media("<=tablet"){
     footer{
         transition: transform 0.3s ease-in-out 0s, margin 0.3s ease-in-out 0s;
         margin-left:$aside-w-collapsed;

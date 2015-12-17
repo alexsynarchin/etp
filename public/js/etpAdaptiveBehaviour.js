@@ -4,7 +4,7 @@ define(
         var aB = {
             addEvents: function(){
                 $('.sidebar__toggle').click(function(){    
-                    if($(window).width()>750){
+                    if($(window).width()>800){
                         
                         if($('body').hasClass('sidebar-expanded')){
                             $('body').removeClass('sidebar-expanded');

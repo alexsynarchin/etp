@@ -13,16 +13,27 @@ header.main-header{
             margin-right:20px;
         }
         &__img-xs{
-            margin-right:20px;
+            margin: 0 20px 5px 0;
         }
         &__site-title{
-            color:$etp-white;
+            color:$etp-yellow-c;
+            font-family: 'Exo 2', sans-serif;
+            font-weight:700;
+            font-size:20px;
+            margin:5px 0;
         }
     }
     .time-header{
-        color:$etp-white;
+        font-family: 'Exo 2', sans-serif;
+        font-weight:500;
+        color:$etp-yellow-c;
+        &__icon{
+            margin-right:5px;
+        }
     }
     .account-header{
+        font-family: 'Exo 2', sans-serif;
+        font-weight:500;
         float:right;
         color:$etp-white;
         &__image {
@@ -44,10 +55,10 @@ header.main-header{
 
 /*Adaptive behaviour*/
 
-@include media(">750px"){
+@include media(">tablet"){
     header.main-header{
         .logo-header{
-            width:240px;
+            width:340px;
             transition: transform 0.3s ease-in-out 0s, width 0.3s ease-in-out 0s;
             padding: 10px 0 0 10px;
             &__img-lg{
@@ -58,7 +69,7 @@ header.main-header{
             }
         }
         .time-header {
-            margin:25px 10px 0 0;
+            margin:31px 10px 0 0;
             float:right;
          }
         .account-header{
@@ -68,7 +79,7 @@ header.main-header{
     }
 }
 
-@include media("<=750px"){
+@include media("<=tablet"){
     header.main-header{
         .logo-header{
             transition: transform 0.3s ease-in-out 0s, width 0.3s ease-in-out 0s;
@@ -86,12 +97,14 @@ header.main-header{
             }
         }
         .account-header {
-            margin:8px 10px 0 0;
+            margin:9px 10px 0 0;
          }
         .time-header {
-            position:absolute;
+            margin:15px 10px 0 10px;
+            float:left;
+            /*position:absolute;
             top:0px;
-            right:12px;
+            right:12px;*/
         }
     }
 }

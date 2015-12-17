@@ -29,7 +29,7 @@ example2
 /*adaptive classes*/
 
 /*hide some insignificant staff on low resolution*/
-@include media("<=750px"){
+@include media("<=tablet"){
     .block-xs-hidden{
         display:none;
     }
