@@ -1,0 +1,33 @@
+﻿div.content.content-search
+    div.container-fluid
+        h3.content-header
+            |Поиск закупок
+        div.row
+        
+            div.col-md-8.col-sm-12.col-xs-12
+            
+                //-поле для поиска
+                include ./etp-search-field
+                
+                //-сортировка результатов поиска
+                
+                //-фильтр результатов для маленьких экранов
+                div.hidden-md.hidden-lg
+                    include ./etp-search-result-filters 
+                
+                
+                include ./etp-search-result-sorting
+                include ./etp-search-switch-view
+                
+                //-результаты ввиде таблицы
+                include ./etp-search-result-table
+                
+                //- pagination
+                include ./etp-search-pagination
+                
+            div.col-md-4.hidden-sm.hidden-xs
+            
+                //-фильтр результатов
+                include ./etp-search-result-filters 
+                
+

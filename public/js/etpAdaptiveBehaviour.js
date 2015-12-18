@@ -1,34 +1,52 @@
 define(
-    ['jquery', 'bootstrap'], 
+    ['jquery', 'jqueryui', 'bootstrap'], 
     function ($ , _bootstrap) {
         var aB = {
             addEvents: function(){
-                $('.sidebar__toggle').click(function(){    
-                    if($(window).width()>800){
-                        
-                        if($('body').hasClass('sidebar-expanded')){
-                            $('body').removeClass('sidebar-expanded');
-                        }
-                        
-                        if($('body').hasClass('sidebar-collapsed')){
-                            $('body').removeClass('sidebar-collapsed');
+                $(document).ready(function(){
+                    //replace this listeners as the do not relate to responsiveness
+                    $(".etp-search-result-filters__filter-bid-time input").datepicker();
+                    $(".etp-search-result-filters__filter-publishing-date input").datepicker();
+                    $(".etp-search-result-filters__filter-end-time input").datepicker();
+                    
+                    //listen to sidebar toggle event
+                    $('.sidebar__toggle').click(function(){    
+                        if($(window).width()>800){
+                            
+                            if($('body').hasClass('sidebar-expanded')){
+                                $('body').removeClass('sidebar-expanded');
+                            }
+                            
+                            if($('body').hasClass('sidebar-collapsed')){
+                                $('body').removeClass('sidebar-collapsed');
+                            } else {
+                                $('body').addClass('sidebar-collapsed');
+                            }
                         } else {
-                            $('body').addClass('sidebar-collapsed');
+                            if($('body').hasClass('sidebar-collapsed')){
+                                $('body').removeClass('sidebar-collapsed');
+                            }
+                            
+                            if($('body').hasClass('sidebar-expanded')){
+                                $('body').removeClass('sidebar-expanded');
+                            } else {
+                                $('body').addClass('sidebar-expanded');
+                            }
                         }
-                    } else {
-                        if($('body').hasClass('sidebar-collapsed')){
-                            $('body').removeClass('sidebar-collapsed');
-                        }
-                        
-                        if($('body').hasClass('sidebar-expanded')){
-                            $('body').removeClass('sidebar-expanded');
-                        } else {
-                            $('body').addClass('sidebar-expanded');
-                        }
+                    });
+                    
+                    //this will snap footer to bottom - replace?
+                    var conMinHeight = $(document).height() -100 - 60;
+                    $('body>.wrapper>.content').css('min-height',conMinHeight+'px');
+                    $('body>.wrapper>.main-footer').removeClass('main-footer_hidden');
+                    
+                    //set aside heigh to fit document
+                    if($('.sidebar').height() < $(document).height()-100-60){
+                        var h = $(document).height()+'px';
+                        $('.sidebar').css('height' , h);                
                     }
+                    
                 });
-                var conMinHeight = $(document).height() -100 - 60;
-                $('body>.wrapper>.content').css('min-height',conMinHeight+'px');
             }
         }
         return aB;

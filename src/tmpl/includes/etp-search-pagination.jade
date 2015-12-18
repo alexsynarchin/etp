@@ -1,0 +1,41 @@
+﻿div.etp-search-pagination
+
+    div.group
+        //- сколько найдено
+        span.etp-search-pagination__count
+            |Найдено по запросу:  1212
+            
+            
+        //- изменить количество выводимых результатов
+        div.etp-search-pagination__set-quantity
+            span.etp-search-pagination__title
+                |Показать:
+            div(class="btn-group" role="group")
+                button(type="button" class="btn etp-search-pagination__btn etp-search-pagination__btn_active") 20
+                button(type="button" class="btn etp-search-pagination__btn") 50
+                button(type="button" class="btn etp-search-pagination__btn") 100
+            
+            
+    //- переключать страницы
+    nav.etp-search-pagination__pagination
+        ul.pagination
+            li
+                a(href="#" aria-label="Previous")
+                    span(aria-hidden="true") &laquo;
+
+            li
+                a(href="#") 1
+            li
+                a(href="#") 2
+            li
+                a(href="#") 3
+            li
+                a(href="#") 4
+            li
+                a(href="#") 5
+
+            li
+                a(href="#" aria-label="Next")
+                    span(aria-hidden="true") &raquo;
+
+    

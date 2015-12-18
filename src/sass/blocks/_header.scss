@@ -1,4 +1,6 @@
-﻿/*General styles*/
+﻿/*TODO exclude individual blocks styles to match BEM rules*/
+
+/*General styles*/
 header.main-header{
     min-width:$total-min-width;
     position:relative;
@@ -7,7 +9,7 @@ header.main-header{
     width:100%;
     height:$header-h;
     background:$header-background-c;
-    .logo-header{
+    .header-logo{
         float:left;
         &__img-lg{
             margin-right:20px;
@@ -23,7 +25,7 @@ header.main-header{
             margin:5px 0;
         }
     }
-    .time-header{
+    .header-time{
         font-family: 'Exo 2', sans-serif;
         font-weight:500;
         color:$etp-yellow-c;
@@ -31,7 +33,7 @@ header.main-header{
             margin-right:5px;
         }
     }
-    .account-header{
+    .header-account{
         font-family: 'Exo 2', sans-serif;
         font-weight:500;
         float:right;
@@ -48,7 +50,10 @@ header.main-header{
             display:inline-block;
             i {
                 margin:0 10px;
-            }           
+            }
+            >div {
+                float:right;
+            }
         }
     }
 }
@@ -57,7 +62,7 @@ header.main-header{
 
 @include media(">tablet"){
     header.main-header{
-        .logo-header{
+        .header-logo{
             width:340px;
             transition: transform 0.3s ease-in-out 0s, width 0.3s ease-in-out 0s;
             padding: 10px 0 0 10px;
@@ -68,11 +73,11 @@ header.main-header{
                 display:none;
             }
         }
-        .time-header {
+        .header-time {
             margin:31px 10px 0 0;
             float:right;
          }
-        .account-header{
+        .header-account {
             margin:25px 10px 0 0;
 
         }
@@ -81,7 +86,7 @@ header.main-header{
 
 @include media("<=tablet"){
     header.main-header{
-        .logo-header{
+        .header-logo{
             transition: transform 0.3s ease-in-out 0s, width 0.3s ease-in-out 0s;
             padding: 0 0 0 10px;
             background:$header-background-xs-color;
@@ -96,10 +101,10 @@ header.main-header{
                 display:inline-block;
             }
         }
-        .account-header {
+        .header-account {
             margin:9px 10px 0 0;
          }
-        .time-header {
+        .header-time {
             margin:15px 10px 0 10px;
             float:left;
             /*position:absolute;

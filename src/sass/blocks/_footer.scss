@@ -1,9 +1,12 @@
-﻿footer {
+﻿.main-footer {
     background:linear-gradient(0deg, rgba(75, 91, 119, 1) 0%, rgba(75, 91, 119, 1) 70%, rgba(60, 68, 82, 1) 100%);
     color:$etp-white-c;
     position:relative;
     z-index:$footer-z;
     height:$footer-h;
+}
+.main-footer_hidden{
+    visibility: hidden;
 }
 
 @include media(">tablet"){

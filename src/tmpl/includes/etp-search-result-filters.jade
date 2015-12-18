@@ -1,0 +1,38 @@
+﻿div.etp-search-result-filters
+    div.etp-search-result-filters__header
+        span Подбор лотов
+    div.etp-search-result-filters__content
+        div.etp-search-result-filters__filter-inn
+            input(type="text" class="form-control" placeholder="Наименование заказчика/Инн")
+        div.etp-search-result-filters__filter-number
+            input(type="text" class="form-control" placeholder="Номер лота на площадке")
+        div.etp-search-result-filters__filter-bid-type
+            
+        div.etp-search-result-filters__filter-price
+            h5.etp-search-result-filters__filter-header Цена
+            div.group            
+                input(type="text" class="form-control" placeholder="От")
+                input(type="text" class="form-control" placeholder="До")
+        
+        div.etp-search-result-filters__filter-bid-time
+            h5.etp-search-result-filters__filter-header Обеспечение заявки
+            div.group
+                input(type="text" class="form-control" placeholder="От")
+                input(type="text" class="form-control" placeholder="До")
+                
+        div.etp-search-result-filters__filter-publishing-date
+            h5.etp-search-result-filters__filter-header Дата публикации
+            div.group
+                input(type="text" class="form-control" placeholder="От")
+                input(type="text" class="form-control" placeholder="До")
+        
+        div.etp-search-result-filters__filter-end-time
+            h5.etp-search-result-filters__filter-header Окончание приема заявок
+            div.group
+                input(type="text" class="form-control" placeholder="От")
+                input(type="text" class="form-control" placeholder="До")
+        div.group.etp-search-result-filters__buttons
+            button.btn.btn-success
+                |Показать
+            button.btn.btn-default
+                |Очистить

@@ -1,0 +1,20 @@
+﻿.content-search {
+
+
+
+//позиционирование дочерних блоков
+    .container-fluid>.row>div>div{ //выбор верхнего элемента каждого блока без его дечерних элементов
+    margin-bottom:15px;
+    }
+    .etp-search-result-sorting{
+        float:left;
+    }
+    .etp-search-switch-view{
+        float:right;
+    }
+    .search-result-table{
+        clear:both;
+    }
+
+
+}

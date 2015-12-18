@@ -1,0 +1,59 @@
+/*geometrys*/
+$total-min-width:500px;
+$header-h:100px;
+
+$aside-w-expanded:230px;
+$aside-w-collapsed:50px;
+
+$footer-h:60px;
+
+
+/*Z-index*/
+$header-z:900;
+$aside-z:800;
+$content-z:400;
+$footer-z:600;
+
+
+/*colors*/
+
+$aside-background-color:#dce3e8;
+$header-background-c:#3c4452;
+$header-background-xs-color:#4b5b77;
+$content-background-c:#eff0f1; //#fafaff;
+
+$etp-dark-grey-c:#3c4452;
+$etp-yellow-c:#f0e700;
+$etp-green-c:#338d37;
+$etp-white:#fff;
+$etp-white-c:#fff;
+$etp-grey:#c7c8d2;
+$etp-grey-c:#c7c8d2;
+$etp-medium-grey-c:#636975;
+
+$etp-text-dark:#3c4452;
+
+/*--placeholders--*/
+
+/*typography*/
+
+%normal-bold {
+    font-family:'Exo 2', sans-serif;
+    font-weight:700;
+}
+%normal-thin {
+    font-family:'Exo 2', sans-serif;
+    font-weight:500;
+}
+%button {
+    font-family:'Exo 2', sans-serif;
+    font-weight:700;
+    text-transform:uppercase;
+}
+
+
+%button-dark {
+    border:0;
+    background:$etp-grey;
+    color:$etp-dark-grey-c;
+}

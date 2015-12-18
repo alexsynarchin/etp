@@ -1,0 +1,68 @@
+﻿//Блок рузультата поиска - таблица
+.etp-search-result-table{
+    table{
+        
+        border-collapse:separate;
+        width:100%;
+        
+
+        //set borders
+        td , th {
+            border-right: 1px solid $etp-grey-c;
+            //border-bottom: 1px solid $etp-grey-c;
+        }
+        tr:last-child td{
+            border-bottom: 1px solid $etp-grey-c;
+        }
+        th:last-child{
+            border-right-style:none;
+        }
+        td:first-child{
+            border-left:1px solid $etp-grey-c;;
+        }
+        
+        td , th {
+            padding:3px;
+        }
+        
+        //header
+        th {
+            background:$etp-medium-grey-c;
+            color:$etp-white-c;
+        }
+        th:first-child{
+        border-radius: 5px 0 0 0;
+        }
+        th:last-child{
+        border-radius: 0 5px 0 0 ;
+        }
+        
+        
+        //set columns with static width
+        
+        thead {
+
+            border-radius: 5px 5px 0 0;
+
+            th:nth-child(1) { //процедура
+                width:100px;
+            }
+            th:nth-child(3) { //номер
+                width:80px;
+            }
+            th:nth-child(5) { //окончание подачи
+                width:100px;
+            }
+            th:nth-child(6) { //цена
+                width:100px;
+            }
+        }
+        
+        //set colors
+        tr:nth-child(odd) {
+            background:$etp-white-c;
+        }
+        
+    }
+    
+}

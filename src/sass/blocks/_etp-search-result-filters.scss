@@ -1,0 +1,61 @@
+﻿//Блок сортировки результатов поиска
+.etp-search-result-filters {
+    overflow:hidden;
+    
+    
+
+    &__content {
+        h5{
+            color:$etp-dark-grey-c;
+            @extend %normal-bold;
+        }
+        >div{
+            margin-bottom:15px;
+        }
+        padding:15px;
+        background:$etp-white-c;
+        
+        border-left:1px solid $etp-grey-c;
+        border-right:1px solid $etp-grey-c;
+        border-bottom:1px solid $etp-grey-c;
+        border-radius:0 0 5px 5px;
+    }
+    
+    &__header {
+        height:36px;
+        border-radius:5px 5px 0 0;
+        color:$etp-white-c;
+        @extend %normal-bold;
+        background:$etp-medium-grey-c;
+        
+        text-align: center;
+        vertical-align: middle;
+        line-height: 36px;
+    }
+    
+    &__filter-price,
+    &__filter-bid-time,
+    &__filter-publishing-date,
+    &__filter-end-time {
+        input:first-child {
+            float:left;
+            width:40%;
+        }
+        input:last-child {
+            float:right;
+            width:40%;
+        }
+    }
+    
+    &__buttons {
+        button:first-child {
+            float:left;
+        }
+        button:last-child {
+            float:right;
+        }
+    }
+    
+    
+
+}

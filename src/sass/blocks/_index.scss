@@ -1,0 +1,13 @@
+﻿//import all blocks here
+
+@import "./aside";
+@import "./content";
+@import "./footer";
+@import "./header";
+@import "./etp-search-field";
+@import "./etp-search-result-sorting"; //сортировка выводимых данных
+@import "./etp-search-switch-view"; //переключатель список-таблица
+@import "./content-search"; //страница поиска
+@import "./etp-search-result-table"; //блок результата поиска - таблица
+@import "./etp-search-result-filters"; //блок Подбор лотов
+@import "./etp-search-pagination";
