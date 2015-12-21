@@ -7,18 +7,23 @@ requirejs.config({
         etpAdaptiveBehaviour: 'etpAdaptiveBehaviour'
     },
     shim: {
-        'bootstrap':{deps: ['jquery']}
+        'bootstrap':{deps: ['jquery']},
     }
 });
  
 requirejs([
-    'jquery',
-    'jqueryui',
-    'bootstrap',
-    'etpAdaptiveBehaviour'
-    ], function($, _jqueryui, _bootstrap, aB){
+    'etpAdaptiveBehaviour',
+    ], function(aB){
         aB.addEvents(); //add some test events
         
         // this is where all the site code should begin
         return {};
-});
+    }
+);
+
+requirejs([
+    'blockMinimize'
+    ],
+    function(){
+    }
+);

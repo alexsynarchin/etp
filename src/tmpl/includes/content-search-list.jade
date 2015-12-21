@@ -1,32 +1,42 @@
-﻿div.content
+﻿div.content.content-search
     div.container-fluid
+        h3.content-header
+            |Поиск закупок
+        div.row
+        
+            div.col-md-8.col-sm-12.col-xs-12
+            
+                //-поле для поиска
+                include ./etp-search-field
+                
+                //-сортировка результатов поиска
+                
+                //-фильтр результатов для маленьких экранов
+                div.hidden-md.hidden-lg
+                    include ./etp-search-result-filters 
+                
+                div.group
+                    include ./etp-search-result-sorting
+                    
+                    //- include ./etp-search-switch-view
+                    //- переключение таблица список
 
-        div.row
-            div.col-sm-6.col-xs-6
-                div.placeholder
-                    span= filler
-                div.placeholder
-                    span= filler
-            div.col-sm-6.col-xs-6
-                div.placeholder
-                    span= filler
-                    span= filler
-        div.row
-            div.col-lg-3.col-sm-4.col-xs-12
-                div.placeholder
-                    span= filler
-                div.placeholder
-                    span= filler
-            div.col-lg-3.col-sm-4.col-xs-12
-                div.placeholder
-                    span= filler
-                    span= filler
-            div.col-lg-3.col-sm-4.col-xs-12
-                div.placeholder
-                    span= filler
-                div.placeholder
-                    span= filler
-            div.col-lg-3.hidden-md.hidden-sm.hidden-xs
-                div.placeholder
-                    span= filler
-                    span= filler
+                    div.etp-search-switch-view
+                            span.etp-search-switch-view__title.hidden-md.hidden-sm.hidden-xs Показать:
+                            div(class="btn-group" role="group" aria-label="...")
+                                a(type="button" class="btn etp-search-switch-view__btn" href="./search-table.html") таблицей
+                                a(type="button" class="btn etp-search-switch-view__btn etp-search-switch-view__btn_active" href="./search-list.html") списком
+                            
+                
+                //-результаты ввиде таблицы
+                include ./etp-search-result-list
+                
+                //- pagination
+                include ./etp-search-pagination
+                
+            div.col-md-4.hidden-sm.hidden-xs
+            
+                //-фильтр результатов
+                include ./etp-search-result-filters 
+                
+

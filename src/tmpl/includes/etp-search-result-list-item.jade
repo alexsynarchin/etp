@@ -1,0 +1,33 @@
+﻿//- Блок рузультата поиска - список - блок одиночного элемента списка
+//- inn - заказчик
+mixin etpSRListItem(header, number, inn, text, price, type, endTime, bidNum)
+
+
+    - var blockClass = "etp-search-result-list-item"
+ 
+    //- random id
+    - var id = randId(6)
+
+    div(class=blockClass)
+        
+        
+        header(class=blockClass+"__header collapsed" data-toggle="collapse" data-target="#"+id)= header
+        
+        div(class=blockClass+"__content collapse" id=id)
+            div.container-fluid
+                div.row
+                    div(class=blockClass+"__left-column col-xs-12 col-sm-8")
+                        h5= number
+                        h5= "Заказчик: "+ inn
+                        p= text
+                    
+                    div(class=blockClass+"__right-column col-xs-12 col-sm-4")
+                        span Цена:
+                        h5= price
+                        span Способ закупки:
+                        h5= type
+                        span Окончание подачи:
+                        h5(class=blockClass+"__end-time")= endTime
+                        p= "Предложений: "+bidNum
+                        button.btn.btn-success
+                            |Участвовать

@@ -62,6 +62,9 @@
         tr:nth-child(odd) {
             background:$etp-white-c;
         }
+        tr:nth-child(even) {
+            background:$content-background-c;
+        }
         
     }
     

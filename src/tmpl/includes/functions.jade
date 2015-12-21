@@ -1,0 +1,10 @@
+﻿//-this function generate random id given length: id+[random alfanum]
+
+- var randId = function(len){
+-    var text = "id"
+-    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+-    for( var i=0; i < 5; i++ ){
+-        text += possible.charAt(Math.floor(Math.random() * possible.length))
+-     }       
+-        return text
+- }

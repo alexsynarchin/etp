@@ -3,7 +3,7 @@
 
 
 //позиционирование дочерних блоков
-    .container-fluid>.row>div>div{ //выбор верхнего элемента каждого блока без его дечерних элементов
+    >.container-fluid>.row>div>div{ //выбор верхнего элемента каждого блока без его дечерних элементов
     margin-bottom:15px;
     }
     .etp-search-result-sorting{

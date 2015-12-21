@@ -1,0 +1,16 @@
+﻿//- as jade support no dynamic include this is can be only used as pattern
+//- mixin blockHeaderCollapse (header, blockClass) this is pointless without providing includes array
+//- use copy/past, change settings
+
+- var header = "test"
+- var blockClass = "test"
+
+//- random id
+- var id = randId(6)
+
+div(class=blockClass + " etp-block-header-collapse")
+    header(class=blockClass+"__header" data-toggle="collapse" target="#"+id)= header
+    div(class=blockClass+"__content collapse in" id=id)
+        
+        //- Content here
+    

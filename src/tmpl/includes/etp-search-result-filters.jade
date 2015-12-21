@@ -1,7 +1,8 @@
 ﻿div.etp-search-result-filters
-    div.etp-search-result-filters__header
+    - var id = randId(6) //- random id so collapse only this block
+    div.etp-search-result-filters__header(data-toggle="collapse" data-target="#"+id)
         span Подбор лотов
-    div.etp-search-result-filters__content
+    div.etp-search-result-filters__content.collapse.in(id=id)
         div.etp-search-result-filters__filter-inn
             input(type="text" class="form-control" placeholder="Наименование заказчика/Инн")
         div.etp-search-result-filters__filter-number
