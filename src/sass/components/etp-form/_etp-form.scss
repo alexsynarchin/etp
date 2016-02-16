@@ -1,0 +1,26 @@
+﻿//all forms
+.etp-form{
+    //layout
+    padding:15px;
+    input {margin-bottom:15px;}
+    
+    //группы по 2 элемента (поля ввода, кнопки)
+    div.group{ 
+            input:first-child {
+                float:left;
+                width:40%;
+            }
+            input:last-child {
+                float:right;
+                width:40%;
+            }
+            button:first-child {
+                float:left;
+            }
+            button:last-child {
+                float:right;
+            }
+        }
+
+}
+@import '__input-text/etp-form__input-text';

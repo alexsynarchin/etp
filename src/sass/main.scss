@@ -1,6 +1,12 @@
-// Import bootstrap and fontawesome
-@import "bootstrap";
-@import "font-awesome";
+//Import base
+@import 'base/index';
+
+//Import vars and utils
+@import "./utils/index";
+
+// Import bootstrap fontawesome etc.
+@import 'vendors/index';
+
 
 /*overwrite bootstrap styles*/
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn:active:focus, .btn:focus {
@@ -14,16 +20,11 @@
   clear: both;
 }
 
-
-
-
-//Import vars and stuff
-@import "./variables/index";
-@import "./utilities/index";
+//layout
+@import 'layout/index';
 
 //import blocks
-@import "./blocks/index";
-
+@import "./components/index";
 
 /*very global values*/
 body {
