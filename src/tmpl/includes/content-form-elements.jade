@@ -1,0 +1,109 @@
+﻿div.content
+    div.container-fluid
+        
+        div.row
+            div.col-sm-hidden.col-md-2
+            div.col-sm-12.col-md-8
+                h3.content-header Заполните данные формы
+                form.etp-form.form-horizontal
+                
+                    div.form-group
+                        div.col-xs-12
+                            input(type="text" class="etp-form__input-text" placeholder="Наименование заказчика/Инн").form-control
+                    div.form-group
+                        div.col-xs-12
+                            input(type="text" class="etp-form__input-text" placeholder="Номер лота на площадке").form-control
+
+                    h5.etp-form__header Цена
+                    div.form-group
+                        div.col-xs-6
+                            input(type="text" class="etp-form__input-text" placeholder="От").form-control
+                        div.col-xs-6
+                            input(type="text" class="etp-form__input-text" placeholder="До").form-control
+                
+                    
+                    
+
+                    div.form-group
+
+                        div.col-xs-12
+                            h5.etp-form__header Способ закупки
+                        div.col-xs-12
+                            label.etp-form__label.checkbox-inline
+                                input(type="checkbox").etp-form__checkbox
+                                |Аукцион
+                        
+                            label.etp-form__label.checkbox-inline
+                                input(type="checkbox").etp-form__checkbox
+                                |Запрос предложений   
+                       
+                            label.etp-form__label.checkbox-inline
+                                input(type="checkbox").etp-form__checkbox
+                                |Конкурс
+                        
+                            label.etp-form__label.checkbox-inline
+                                input(type="checkbox").etp-form__checkbox
+                                |Запрос цен
+                    
+                    h5.etp-form__header Обеспечение заявки
+                    div.form-group
+                        div.col-xs-6
+                            input(type="text" class="etp-form__input-text" placeholder="От" data-module="datepicker").form-control
+                        div.col-xs-6
+                            input(type="text" class="etp-form__input-text" placeholder="До" data-module="datepicker").form-control
+                        
+
+                    h5.etp-form__header Дата публикации
+                    div.form-group
+                        div.col-xs-6
+                            input(type="text" class="etp-form__input-text" placeholder="От" data-module="datepicker").form-control
+                        div.col-xs-6
+                            input(type="text" class="etp-form__input-text" placeholder="До" data-module="datepicker").form-control
+                
+
+                    h5.etp-form__header Окончание приема заявок
+                    div.form-group
+                        div.col-xs-6
+                            input(type="text" class="etp-form__input-text" placeholder="От" data-module="datepicker").form-control
+                        div.col-xs-6
+                            input(type="text" class="etp-form__input-text" placeholder="До" data-module="datepicker").form-control
+                    
+                    h5.etp-form__header Выбор опции
+                    div.form-group
+                        div.col-xs-6
+                            select.form-control.etp-form__select
+                                option Опция 1
+                                option Опция 2
+                                option Опция 3
+                    div.form-group
+                        div.col-xs-12
+                                label.radio-inline
+                                    input(type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1").etp-form__radio
+                                    |Опция 1
+                                label.radio-inline
+                                    input(type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2").etp-form__radio
+                                    |Опция 2
+                                label.radio-inline
+                                    input(type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3").etp-form__radio
+                                    |Опция 3
+                                label.radio-inline
+                                    input(type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4").etp-form__radio
+                                    |Опция 4
+                    div.form-group
+
+                        div.col-xs-12.text-right
+                            h5.etp-form__header Подтвердите согласие с 
+                                a(href="#") правилами торговой площадки
+                        div.col-xs-12.text-right
+                            label.etp-form__label.checkbox-inline
+                                input(type="checkbox").etp-form__checkbox
+                                |Подтверждаю
+                                
+                    div.form-group
+                        div.col-xs-3
+                            button.btn.etp-form__btn.etp-form__btn_cancel
+                                |Отмена
+                        div.col-xs-3.pull-right.text-right
+                            button.btn.etp-form__btn.etp-form__btn_ok
+                                |Продолжить
+            div.col-sm-hidden.col-md-2

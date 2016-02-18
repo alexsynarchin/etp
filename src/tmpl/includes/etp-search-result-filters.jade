@@ -3,38 +3,74 @@
     div.etp-search-result-filters__header(data-toggle="collapse" data-target="#"+id)
         span Подбор лотов
     div.etp-search-result-filters__content.collapse.in(id=id)
-        form.etp-form
+        form.etp-form.form-horizontal
+        
+            div.form-group
+                div.col-xs-12
+                    input(type="text" class="etp-form__input-text" placeholder="Наименование заказчика/Инн").form-control
+            div.form-group
+                div.col-xs-12
+                    input(type="text" class="etp-form__input-text" placeholder="Номер лота на площадке").form-control
 
-                input(type="text" class="etp-form__input-text" placeholder="Наименование заказчика/Инн")
+            h5.etp-form__header Цена
+            div.form-group
+                div.col-xs-6
+                    input(type="text" class="etp-form__input-text" placeholder="От").form-control
+                div.col-xs-6
+                    input(type="text" class="etp-form__input-text" placeholder="До").form-control
+        
+            
+            
 
-                input(type="text" class="etp-form__input-text" placeholder="Номер лота на площадке")
+            div.form-group
 
+                div.col-xs-12
+                    h5.etp-form__header Способ закупки
+                div.col-xs-6
+                    label.etp-form__label.checkbox-inline
+                        input(type="checkbox").etp-form__checkbox
+                        |Аукцион
+                div.col-xs-6
+                    label.etp-form__label.checkbox-inline
+                        input(type="checkbox").etp-form__checkbox
+                        |Запрос предложений   
+                div.col-xs-6
+                    label.etp-form__label.checkbox-inline
+                        input(type="checkbox").etp-form__checkbox
+                        |Конкурс
+                div.col-xs-6
+                    label.etp-form__label.checkbox-inline
+                        input(type="checkbox").etp-form__checkbox
+                        |Запрос цен
+            
+            h5.etp-form__header Обеспечение заявки
+            div.form-group
+                div.col-xs-6
+                    input(type="text" class="etp-form__input-text" placeholder="От" data-module="datepicker").form-control
+                div.col-xs-6
+                    input(type="text" class="etp-form__input-text" placeholder="До" data-module="datepicker").form-control
                 
 
-                h5.etp-search-result-filters__filter-header Цена
-                div.group            
-                    input(type="text" class="etp-form__input-text datepicker" placeholder="От" data-module="datepicker")
-                    input(type="text" class="etp-form__input-text" placeholder="До" data-module="datepicker")
+            h5.etp-form__header Дата публикации
+            div.form-group
+                div.col-xs-6
+                    input(type="text" class="etp-form__input-text" placeholder="От" data-module="datepicker").form-control
+                div.col-xs-6
+                    input(type="text" class="etp-form__input-text" placeholder="До" data-module="datepicker").form-control
+        
+
+            h5.etp-form__header Окончание приема заявок
+            div.form-group
+                div.col-xs-6
+                    input(type="text" class="etp-form__input-text" placeholder="От" data-module="datepicker").form-control
+                div.col-xs-6
+                    input(type="text" class="etp-form__input-text" placeholder="До" data-module="datepicker").form-control
             
-
-                h5.etp-search-result-filters__filter-header Обеспечение заявки
-                div.group
-                    input(type="text" class="etp-form__input-text" placeholder="От" data-module="datepicker")
-                    input(type="text" class="etp-form__input-text" placeholder="До" data-module="datepicker")
-                    
-
-                h5.etp-search-result-filters__filter-header Дата публикации
-                div.group
-                    input(type="text" class="etp-form__input-text" placeholder="От" data-module="datepicker")
-                    input(type="text" class="etp-form__input-text" placeholder="До" data-module="datepicker")
-            
-
-                h5.etp-search-result-filters__filter-header Окончание приема заявок
-                div.group
-                    input(type="text" class="etp-form__input-text" placeholder="От" data-module="datepicker")
-                    input(type="text" class="etp-form__input-text" placeholder="До" data-module="datepicker")
-                div.group
-                    button.btn.btn-success
+            div.form-group
+                div.col-xs-3
+                    button.btn.etp-form__btn.etp-form__btn_ok
                         |Показать
-                    button.btn.btn-default
+                div.col-xs-3.pull-right.text-right
+                    button.btn.etp-form__btn.etp-form__btn_cancel
                         |Очистить
+                    

@@ -1,12 +1,12 @@
 ﻿//Блок сортировки результатов поиска. Этот блок содержит блок формы
 .etp-search-result-filters {
+
+
     overflow:hidden;
 
     &__content {
-        h5{
-            color:$etp-dark-grey-c;
-            @extend %normal-bold;
-        }
+        //layout
+        padding:15px;
         
         
         background:$etp-white-c;        
