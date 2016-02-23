@@ -42,6 +42,17 @@ Datepicker
             color:$etp-dark-grey-c;
             @extend %normal-bold;
     }
+    &__legend{
+        margin: 20px 0 0 0;
+        border-bottom: 1px solid $etp-medium-grey-c;
+        span {
+            padding:5px 5px 2px 5px;
+            border-top:1px solid $etp-medium-grey-c;
+            border-right:1px solid $etp-medium-grey-c;
+            border-left:1px solid $etp-medium-grey-c;
+            border-radius: 5px 5px 0 0;
+        }
+    }
         
     &__label{
         color:$etp-dark-grey-c;

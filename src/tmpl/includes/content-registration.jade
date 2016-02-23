@@ -1,0 +1,177 @@
+﻿div.content
+    div.container-fluid
+        
+        div.row
+            div.col-sm-hidden.col-md-2
+            div.col-sm-12.col-md-8
+                h3.content-header Регистрация Пользователя
+                form.etp-form.form-horizontal
+                    fieldset
+                        legend.etp-form__legend
+                            span Информация о пользователе
+                        div.form-group
+                            div.col-xs-6
+                                label(for="reg-form-email") Имя пользователя (Логин)*
+                                input(id="reg-form-email" type="text" placeholder="").form-control.etp-form__input-text
+                            div.col-xs-6
+                                label Email*
+                                input(type="text" placeholder="").form-control.etp-form__input-text
+                        div.form-group
+                            div.col-xs-6
+                                label Пароль*
+                                input(type="text" placeholder="").form-control.etp-form__input-text
+                                label Повторите Пароль*
+                                input(type="text" placeholder="").form-control.etp-form__input-text
+                            div.col-xs-6
+                                small Надежный пароль должен содержать не менее 8 символов и состоять из букв разного регистра, цифр и специальных знаков (!"№;%:?*)
+                        div.form-group
+
+                            div.col-xs-4
+                                label Фамилия*
+                                input(type="text" placeholder="").form-control.etp-form__input-text
+                            div.col-xs-4
+                                label Имя*
+                                input(type="text" placeholder="").form-control.etp-form__input-text
+                            div.col-xs-4
+                                label Отчество*
+                                input(type="text" placeholder="").form-control.etp-form__input-text
+                    fieldset
+                        legend.etp-form__legend
+                            span Информация об организации
+                        div.form-group
+                            div.col-xs-12
+                                    label.radio-inline
+                                        input(type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1").etp-form__radio
+                                        |Юридическое лицо
+                                    label.radio-inline
+                                        input(type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2").etp-form__radio
+                                        |Индивидуальный предприниматель
+                                    label.radio-inline
+                                        input(type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3").etp-form__radio
+                                        |Физическое лицо
+                        div.form-group
+                            div.col-xs-12.col-md-6
+                                label(for="reg-form-orgname") Полное наименование организации
+                                input(id="reg-form-orgname" type="text" placeholder="").form-control.etp-form__input-text
+                            div.col-xs-12.col-md-6
+                                label Сокращенное наименование организации
+                                input(type="text" placeholder="").form-control.etp-form__input-text
+                        div.form-group
+                            div.col-xs-6
+                                label Организационно-правовая форма
+                                select.form-control.etp-form__select
+                                    option АО
+                                    option ПАО
+                                    option ОАО
+                                    option ЗАО
+                                    option ООО
+                                    option ФГУП
+                                    option ГУП
+                                    option Другое...
+                                    
+                            div.col-xs-6
+                                label Субъект малого и среднего предпринимательства
+                                select.form-control.etp-form__select
+                                    option Малый бизнес
+                                    option Средний бизнес
+                                    option Не субъект МСП
+                        
+                        div.form-group
+                            div.col-xs-6.col-md-4
+                                label ИНН
+                                input(type="text" placeholder="").form-control.etp-form__input-text
+                            div.col-xs-6.col-md-4
+                                label ОКПО
+                                input(type="text" placeholder="").form-control.etp-form__input-text
+                            div.col-xs-6.col-md-4
+                                label КПП
+                                input(type="text" placeholder="").form-control.etp-form__input-text
+                            div.col-xs-6.col-md-4
+                                label ОГРН
+                                input(type="text" placeholder="").form-control.etp-form__input-text
+                            div.col-xs-6.col-md-4
+                                label ОКВЭД
+                                input(type="text" placeholder="").form-control.etp-form__input-text
+                    fieldset
+                        legend.etp-form__legend
+                            span Банковские реквизиты
+                        
+                        div.form-group
+                            div.col-xs-6.col-md-4
+                                label Название банка
+                                input(type="text" placeholder="").form-control.etp-form__input-text
+                            
+                        div.form-group
+                            div.col-xs-6.col-md-4
+                                label Бик
+                                input(type="text" placeholder="").form-control.etp-form__input-text
+                            div.col-xs-6.col-md-4
+                                label КС
+                                input(type="text" placeholder="").form-control.etp-form__input-text
+                            div.col-xs-6.col-md-4
+                                label РС
+                                input(type="text" placeholder="").form-control.etp-form__input-text
+                                
+                    fieldset
+                        legend.etp-form__legend
+                            span Контактная информация
+                        
+                        div.form-group
+                            div.col-xs-6
+                                label Страна
+                                select.form-control.etp-form__select
+                                    option Российская Федерация
+                                    option Иностранное государство
+                            div.col-xs-6
+                                label Субъект РФ
+                                select.form-control.etp-form__select
+                                    optgroup Приволжский ФО
+                                        option Республика Башкортостан
+                                    optgroup Южный ФО
+                                        option Краснодарский край
+                        
+                        div.form-group
+                            div.col-xs-6
+                                label Населенный пункт
+                                input(type="text" placeholder="").form-control.etp-form__input-text
+                            div.col-xs-6
+                                label Почтовый индекс
+                                input(type="text" placeholder="").form-control.etp-form__input-text
+                        
+                        div.form-group
+                            div.col-xs-6
+                                label Улица
+                                input(type="text" placeholder="").form-control.etp-form__input-text
+                            div.col-xs-2
+                                label Дом
+                                input(type="text" placeholder="").form-control.etp-form__input-text
+                            div.col-xs-2
+                                label Курпус
+                                input(type="text" placeholder="").form-control.etp-form__input-text
+                            div.col-xs-2
+                                label Офис
+                                input(type="text" placeholder="").form-control.etp-form__input-text
+                        
+                        div.form-group
+                            div.col-xs-6
+                                label Телфон организации
+                                input(type="text" placeholder="").form-control.etp-form__input-text
+                            div.col-xs-6
+                                label Сайт организации
+                                input(type="text" placeholder="").form-control.etp-form__input-text
+                        div.form-group
+
+                            div.col-xs-12.text-right
+                                h5.etp-form__header Подтвердите согласие с 
+                                    a(href="#") правилами торговой площадки
+                            div.col-xs-12.text-right
+                                label.etp-form__label.checkbox-inline
+                                    input(type="checkbox").etp-form__checkbox
+                                    |Подтверждаю
+                        
+                        div.form-group
+                            div.col-xs-3.pull-right.text-right
+                                button.btn.etp-form__btn.etp-form__btn_ok
+                                    |Регистрация
+                        
+            div.col-sm-hidden.col-md-2

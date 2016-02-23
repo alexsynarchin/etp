@@ -21,6 +21,7 @@
     "font-awesome": "fontawesome#~4.5.0",
     "requirejs-plugins": "~1.0.3",
     "jquery-ui": "~1.11.4",
-    "bootstrap-datepicker": "~1.6.0"
+    "bootstrap-datepicker": "~1.6.0",
+    "chosen": "~1.5.1"
   }
 }
