@@ -1,4 +1,9 @@
-﻿div.content
+﻿script.
+    function redirect(){
+        window.location.replace("http://127.0.0.1:17181/registration-step1.html");
+        return false;
+    }
+div.content
     div.container-fluid
         
         div.row
@@ -38,17 +43,7 @@
                     fieldset
                         legend.etp-form__legend
                             span Информация об организации
-                        div.form-group
-                            div.col-xs-12
-                                    label.radio-inline
-                                        input(type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1").etp-form__radio
-                                        |Юридическое лицо
-                                    label.radio-inline
-                                        input(type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2").etp-form__radio
-                                        |Индивидуальный предприниматель
-                                    label.radio-inline
-                                        input(type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3").etp-form__radio
-                                        |Физическое лицо
+                        
                         div.form-group
                             div.col-xs-12.col-md-6
                                 label(for="reg-form-orgname") Полное наименование организации
@@ -170,6 +165,11 @@
                                     |Подтверждаю
                         
                         div.form-group
+                            div.col-xs-3
+                                button(onclick="return redirect()").btn.etp-form__btn.etp-form__btn_ok
+                                    span.glyphicon.glyphicon-chevron-left
+                                    |Вернуться
+                                    
                             div.col-xs-3.pull-right.text-right
                                 button.btn.etp-form__btn.etp-form__btn_ok
                                     |Регистрация

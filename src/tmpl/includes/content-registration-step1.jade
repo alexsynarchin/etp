@@ -1,0 +1,40 @@
+﻿script.
+    function redirect(){
+        window.location.replace("http://127.0.0.1:17181/registration.html");
+        return false;
+    }
+div.content
+    div.container-fluid
+        
+        div.row
+            div.col-sm-hidden.col-md-2
+            div.col-sm-12.col-md-8
+                h3.content-header Регистрация Пользователя. Шаг 1
+                form.etp-form.form-horizontal
+                    
+                    fieldset
+                        legend.etp-form__legend
+                            span Организационно-правовая форма
+                        div.form-group
+                            div.col-xs-12
+                                    label.radio-inline
+                                        input(type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1").etp-form__radio
+                                        |Юридическое лицо
+                            div.col-xs-12
+                                    label.radio-inline
+                                        input(type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2").etp-form__radio
+                                        |Индивидуальный предприниматель
+                            div.col-xs-12
+                                    label.radio-inline
+                                        input(type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3").etp-form__radio
+                                        |Физическое лицо
+                                        
+                        div.form-group
+                            div.col-xs-3.pull-right.text-right
+                                button(onclick="return redirect()").btn.etp-form__btn.etp-form__btn_ok
+                                    |Продолжить
+                                    span.glyphicon.glyphicon-chevron-right
+                        
+                    
+                        
+            div.col-sm-hidden.col-md-2
