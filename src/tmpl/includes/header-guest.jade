@@ -1,0 +1,41 @@
+﻿header.header-gp
+    div.container
+        div.row
+            div.col-xs-12.sol-sm-6.pull-left.header-logo
+                a(href="#")
+                    img.header-logo__img-lg(src="#{logoUrlLg}")
+                    img.header-logo__img-xs(src="#{logoUrlXs}")
+                    h5.header-logo__site-title= siteTitle
+            div.col-xs-12.col-sm-6.pull-right.header-login.text-right
+                button.btn.etp-form__btn_ok Войти
+                button.btn.etp-form__btn_ok Зарегистрироваться
+nav.navbar.etp-nav-gp
+    div.container
+            div.row
+                div.navbar-header
+                    button(type="button" data-toggle="collapse" data-target="#nav-gp").navbar-toggle.collapsed
+                        span.fa.fa-bars
+                        |Меню сайта
+                div(id="nav-gp").collapse.navbar-collapse
+                    ul.nav.navbar-nav
+                        li(class="active")
+                            a
+                                span.fa.fa-home
+                                span Главная страница
+                        li
+                            a
+                                span Информация
+                        li
+                            a
+                                span Контакты
+                        li
+                            a
+                                span Документы
+                    ul.nav.navbar-nav.navbar-right
+                        li(class="active")
+                            a
+                                span.fa.fa-envelope
+                        li
+                            a
+                                span.fa.fa-phone
+                                span 8-800-200-4444

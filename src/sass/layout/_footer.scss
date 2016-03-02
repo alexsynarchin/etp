@@ -1,4 +1,4 @@
-﻿.main-footer {
+﻿footer {
     background:linear-gradient(0deg, rgba(75, 91, 119, 1) 0%, rgba(75, 91, 119, 1) 70%, rgba(60, 68, 82, 1) 100%);
     color:$etp-white-c;
     position:relative;
@@ -10,7 +10,7 @@
 }
 
 @include media(">tablet"){
-    footer{
+    footer.main-footer{
         transition: transform 0.3s ease-in-out 0s, margin 0.3s ease-in-out 0s;
         margin-left:$aside-w-expanded;
     }
@@ -23,7 +23,7 @@
 }
 
 @include media("<=tablet"){
-    footer{
+    footer.main-footer{
         transition: transform 0.3s ease-in-out 0s, margin 0.3s ease-in-out 0s;
         margin-left:$aside-w-collapsed;
     }

@@ -46,6 +46,8 @@ $etp-white-c:#fff;
 
 $etp-text-dark:#3c4452;
 
+//typography
+$etp-p-indent:15px;
 /*--placeholders--*/
 
 /*typography*/
@@ -378,8 +380,8 @@ $screen-phone:               $screen-xs-min !default;
 
 // Small screen / tablet
 //** Deprecated `$screen-sm` as of v3.0.1
-$screen-sm:                  768px !default;
-$screen-sm-min:              $screen-sm !default;
+$screen-sm:                  800px !default; //@etp was 768
+$screen-sm-min:              $screen-sm + 1 !default; //@etp add +1
 //** Deprecated `$screen-tablet` as of v3.0.1
 $screen-tablet:              $screen-sm-min !default;
 

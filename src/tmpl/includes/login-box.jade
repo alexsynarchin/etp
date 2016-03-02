@@ -1,0 +1,26 @@
+﻿script.
+    function redirect(e){
+        var s = "/"+e.dataset.redirect+".html";
+        window.location=s;
+        return false;
+    }
+div.login-box
+    div.login-box__header.text-center
+        img(src="/img/logo.png")
+        h4 Электронная торговая площадка 
+    div.login-box__content.text-center
+        
+        form.form.etp-form
+            h4 Введите данные для входа в систему
+            div.form-group.etp-form__i-over-left
+                    input(type="text" placeholder="имя пользователя").form-control.input-lg.etp-form__input-text
+                    span.glyphicon.glyphicon-user.etp-form__i.etp-form__i_lg
+            div.form-group.etp-form__i-over-left
+                input(type="password" placeholder="пароль").form-control.input-lg.etp-form__input-text
+                span.glyphicon.glyphicon-lock.etp-form__i.etp-form__i_lg
+            div.form-group
+                button(onclick="return redirect(this)" data-redirect="search-table").btn.btn-lg.etp-form__btn.etp-form__btn_ok
+                    |Войти
+        div.group
+            a(href="#").pull-left Восстановить пароль
+            a(href="/registration-step1.html").pull-right Регистрация

@@ -47,3 +47,17 @@
     color:$etp-grey;
     }
 }
+.content-gp {
+    background:$content-background-c;
+    .placeholder{
+    display:block;
+    background:$etp-grey;
+    color:$etp-grey;
+    }
+    .row, .form-group {
+        margin-top:15px;
+        .placeholder{
+        margin-bottom:15px;
+        }
+    }
+}

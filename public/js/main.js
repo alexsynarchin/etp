@@ -5,7 +5,8 @@ require.config({
         'jqueryui': 'jquery-ui.min',
         'bootstrap': 'bootstrap.min',
         'bootstrap-datepicker':'bootstrap/bootstrap-datepicker.min',
-        'etpAdaptiveBehaviour': 'etpAdaptiveBehaviour'
+        'etpAdaptiveBehaviour': 'etpAdaptiveBehaviour',
+        'etpGp':'etpGp'
     },
     shim: {
         'bootstrap':{deps: ['jquery']},
@@ -15,6 +16,12 @@ require.config({
 require(['etpAdaptiveBehaviour'], function(aB){
         aB.addEvents(); //add some test events
         
+        //if guest page require gp specific js
+        if($('.wrapper-gp').length){
+            require(['etpGp'], function(){
+        
+            });
+        }
         return {};
     }
 );
@@ -26,3 +33,9 @@ require (['bootstrap-datepicker'], function(datepicker){
    $('*[data-module="datepicker"]').datepicker({'language':'ru'});
 }
 );
+
+if (document.getElementsByClassName('guest-wrapper').lenght>0){
+    require(['etpGp'], function(){
+        
+    });
+}

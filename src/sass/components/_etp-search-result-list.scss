@@ -3,49 +3,8 @@
 //Позиционирование дочерних блоков
 .etp-search-result-list{
     &-item{
+        margin-bottom:15px;
     }
-//Стили заголовков
-    &-item:first-child{
-        .etp-search-result-list-item__header{
-            border-radius:5px 5px 0 0;
-            border-top:1px solid $etp-grey-c;
-        }
-    }
-    &-item:last-child{
-        .etp-search-result-list-item__header.collapsed{
-            border-radius:0 0 5px 5px;
-            border-bottom:1px solid $etp-grey-c;
-        }
-    }
-    &-item:nth-child(even){
-        .etp-search-result-list-item__header.collapsed{
-            background:$content-background-c;
-            color:$etp-text-dark;
-        }
-    }
-    &-item:nth-child(odd){
-        .etp-search-result-list-item__header.collapsed{
-            background:$etp-white-c;
-            color:$etp-text-dark;
-        }
-    }
-    &-item{
-        &__header{
-            background:$etp-medium-grey-c;
-        }
-        .etp-search-result-list-item__header.collapsed{
-            background:$etp-medium-grey-c;
-            border-left:1px solid $etp-grey-c;
-            border-right:1px solid $etp-grey-c;
-        }
-       .etp-search-result-list-item__header.collapsed:hover{
-            background:$etp-medium-grey-c;
-            color:$etp-white-c;
-            border-left:none;
-            border-right:none;
-            border-top:none;
-            border-bottom:1px solid $etp-white-c;
-        }
-    }
+
         
 }

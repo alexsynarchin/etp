@@ -103,6 +103,23 @@ Datepicker
         
         &_cancel:hover{       
             background-color:$brand-danger; //$etp-light-grey-c;
-        }  
+        }
+    }
+    
+    //with icon over input field
+    &__i-over-left{
+        position:relative;
+        input{
+            padding-left:50px;
+        }
+    }
+    &__i{
+        position:absolute !important;
+        color:$etp-grey-c;
+    }
+    &__i_lg{
+        top:15px;
+        left:20px;
+        font-size:20px;
     }
 }
