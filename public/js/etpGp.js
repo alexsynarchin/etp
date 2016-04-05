@@ -33,14 +33,5 @@ define(
                 console.log(isTablet);
             }
         });
-        
-        //set content area height to fit page
-        $(document).ready(function(){
-                //if($(document).height()<$(window).height()){
-                //some condition for check if doc fit to window and not smaller - remove after enough content added
-                    var conMinHeight = $(document).height() - 100 - 60 - 50;
-                    $('body>.wrapper-gp>.content-gp').css('min-height',conMinHeight+'px');
-                //}
-        });
     }
 );

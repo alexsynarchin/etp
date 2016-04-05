@@ -1,9 +1,15 @@
 ﻿footer {
-    background:linear-gradient(0deg, rgba(75, 91, 119, 1) 0%, rgba(75, 91, 119, 1) 70%, rgba(60, 68, 82, 1) 100%);
+    background:linear-gradient(0deg, $etp-medium-grey-c 0%, $etp-medium-grey-c 70%, $etp-dark-grey-c 100%);
     color:$etp-white-c;
     position:relative;
     z-index:$footer-z;
     height:$footer-h;
+    &.main-footer{
+        position:absolute;
+        bottom:0;
+        left:0;
+        width:100%
+    }
 }
 .main-footer_hidden{
     visibility: hidden;
@@ -33,4 +39,10 @@
     .sidebar-collapsed footer{
         margin-left:$aside-w-collapsed;
     }
+}
+
+footer.gp-footer{
+    position:absolute;
+    top:0;
+    left:0;
 }

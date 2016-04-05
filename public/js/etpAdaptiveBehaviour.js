@@ -30,18 +30,6 @@ define(
                             }
                         }
                     });
-                    
-                    //this will snap footer to bottom - replace?
-                    var conMinHeight = $(document).height() -100 - 60;
-                    $('body>.wrapper>.content').css('min-height',conMinHeight+'px');
-                    $('body>.wrapper>.main-footer').removeClass('main-footer_hidden');
-                    
-                    //set aside heigh to fit document
-                    if($('.sidebar').height() < $(document).height()-100-60){
-                        var h = $(document).height()+'px';
-                        $('.sidebar').css('height' , h);                
-                    }
-                    
                 });
             }
         }

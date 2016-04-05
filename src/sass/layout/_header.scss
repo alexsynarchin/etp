@@ -127,7 +127,7 @@ header.main-header{
                 display:none;
             }        
         }
-        .header-login{
+        .header-contacts{
             transition: transform 0.3s ease-in-out 0s, width 0.3s ease-in-out 0s;
             padding-top:33px;
         }
@@ -151,9 +151,12 @@ header.main-header{
                 display:inline-block;
             }
         }
-        .header-login{
+        .header-contacts{
             transition: transform 0.3s ease-in-out 0s, width 0.3s ease-in-out 0s;
             padding-top:16px;
+            div.phone-gp-text{
+                display:none;
+            }
         }
     }
 }
@@ -181,9 +184,28 @@ header.header-gp{
             margin:5px 0;
         }
     }
-    .header-login{
-        button:last-child{
-            margin-left:15px;
+    .header-contacts{
+        span.fa.fa-phone{
+            display:inline-flex;
+            display: -webkit-inline-flex; /* Safari */
+            width:36px;
+            height:36px;
+            border:solid 1px $etp-yellow-c;
+            border-radius:100%;
+            font-size:22px;
+            color:$etp-yellow-c;
+            justify-content: center;
+            align-items: center;
+            -webkit-align-items: center; /* Safari 7.0+ */
+        }
+        span.phone-gp{
+            vertical-align:+2px;
+            font-size:20px;
+            color:$etp-yellow-c;
+            margin-left:10px;
+        }
+        div.phone-gp-text{
+            color:$etp-yellow-c;
         }
     }
 }

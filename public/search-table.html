@@ -1,1 +1,361 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><script type="text/javascript" data-main="js/main" src="js/require.js"></script><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><link href="https://fonts.googleapis.com/css?family=Exo+2:200,500,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css"><link rel="stylesheet" href="css/main.css"><link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css"></head><body><div class="wrapper"><header class="main-header"><a href="#" class="header-logo"><img src="/img/logo.png" class="header-logo__img-lg"><img src="/img/logo-xs.png" class="header-logo__img-xs"><h5 class="header-logo__site-title">Электронная торговая площадка</h5></a><div class="header-account"><img src="/img/james-stewart_s.jpg" class="header-account__image"><div class="header-account__menu"><span>Соколов Д.В.</span><div><i class="fa fa-sign-out"></i><span>Выход</span></div></div></div><div class="header-time"><h5><i class="fa fa-clock-o header-time__icon"></i>19:08  12 января 2016 г.</h5></div></header><aside class="sidebar"><a href="#" role="button-toggle" class="sidebar__toggle"><i class="fa fa-bars"></i></a><nav role="main-nenu" class="sidebar__menu"><ul><li><a href="./index.html" class="side-menu-item"><i class="fa fa-home"></i><span>Главная</span></a></li><li><a href="./search-table.html" class="side-menu-item"><i class="fa fa-search"></i><span>Поиск закупок</span></a></li><li><a class="side-menu-item"><i class="fa fa-level-down"></i><span>Закупки</span></a></li><li><a class="side-menu-item"><i class="fa fa-level-up"></i><span>Продажи</span></a></li><li><a class="side-menu-item"><i class="fa fa-file"></i><span>Документы</span></a></li><li><a class="side-menu-item"><i class="fa fa-question-circle"></i><span>Обучение</span></a></li><li><a class="side-menu-item"><i class="fa fa-cog"></i><span>Настройки</span></a></li></ul></nav></aside><div class="content content-search"><div class="container-fluid"><h3 class="content-header">Поиск закупок</h3><div class="row"><div class="col-md-8 col-sm-12 col-xs-12"><div class="etp-search-field">       <div class="input-group"><input type="text" placeholder="Поиск закупок..." class="etp-search-field__input form-control"><span class="input-group-btn"><button type="button" class="btn btn-success etp-search-field__button">Найти &nbsp<i class="fa fa-search"></i></button></span></div></div><div class="hidden-md hidden-lg"><div class="etp-search-result-filters"><div data-toggle="collapse" data-target="#idcwb3V" class="etp-search-result-filters__header"><span>Подбор лотов</span></div><div id="idcwb3V" class="etp-search-result-filters__content collapse in"><form class="etp-form form-horizontal"><div class="form-group"><div class="col-xs-12"><input type="text" placeholder="Наименование заказчика/Инн" class="etp-form__input-text form-control"></div></div><div class="form-group"><div class="col-xs-12"><input type="text" placeholder="Номер лота на площадке" class="etp-form__input-text form-control"></div></div><h5 class="etp-form__header">Цена</h5><div class="form-group"><div class="col-xs-6"><input type="text" placeholder="От" class="etp-form__input-text form-control"></div><div class="col-xs-6"><input type="text" placeholder="До" class="etp-form__input-text form-control"></div></div><div class="form-group"><div class="col-xs-12"><h5 class="etp-form__header">Способ закупки</h5></div><div class="col-xs-6"><label class="etp-form__label checkbox-inline"><input type="checkbox" class="etp-form__checkbox">Аукцион</label></div><div class="col-xs-6"><label class="etp-form__label checkbox-inline"><input type="checkbox" class="etp-form__checkbox">Запрос предложений   </label></div><div class="col-xs-6"><label class="etp-form__label checkbox-inline"><input type="checkbox" class="etp-form__checkbox">Конкурс</label></div><div class="col-xs-6"><label class="etp-form__label checkbox-inline"><input type="checkbox" class="etp-form__checkbox">Запрос цен</label></div></div><h5 class="etp-form__header">Обеспечение заявки</h5><div class="form-group"><div class="col-xs-6"><input type="text" placeholder="От" data-module="datepicker" class="etp-form__input-text form-control"></div><div class="col-xs-6"><input type="text" placeholder="До" data-module="datepicker" class="etp-form__input-text form-control"></div></div><h5 class="etp-form__header">Дата публикации</h5><div class="form-group"><div class="col-xs-6"><input type="text" placeholder="От" data-module="datepicker" class="etp-form__input-text form-control"></div><div class="col-xs-6"><input type="text" placeholder="До" data-module="datepicker" class="etp-form__input-text form-control"></div></div><h5 class="etp-form__header">Окончание приема заявок</h5><div class="form-group"><div class="col-xs-6"><input type="text" placeholder="От" data-module="datepicker" class="etp-form__input-text form-control"></div><div class="col-xs-6"><input type="text" placeholder="До" data-module="datepicker" class="etp-form__input-text form-control"></div></div><div class="form-group"><div class="col-xs-3"><button class="btn etp-form__btn etp-form__btn_ok">Показать</button></div><div class="col-xs-3 pull-right text-right"><button class="btn etp-form__btn etp-form__btn_cancel">Очистить</button></div></div></form></div></div></div><div class="etp-search-result-sorting"><span class="etp-search-result-sorting__title">Сортировать по:</span><span class="etp-search-result-sorting__type">Цене</span><button class="etp-search-result-sorting__btn"><i class="fa fa-caret-down"></i></button><span class="etp-search-result-sorting__type">Названию</span><button class="etp-search-result-sorting__btn"><i class="fa fa-caret-up"></i></button></div><div class="etp-search-switch-view"><span class="etp-search-switch-view__title hidden-md hidden-sm hidden-xs">Показать:</span><div role="group" aria-label="..." class="btn-group"><a type="button" href="./search-table.html" class="btn etp-search-switch-view__btn etp-search-switch-view__btn_active">таблицей</a><a type="button" href="./search-list.html" class="btn etp-search-switch-view__btn">списком</a></div></div><div class="etp-search-result-table"><table><thead><th>Процедура</th><th>Наименование</th><th>Номер</th><th>Заказчик</th><th>Окончание подачи</th><th>Цена&nbsp<i class="fa fa-rub"></i></th></thead><tr><td>Аукцион</td><td>Приобретение светодиодного оборудования</td><td>1555486</td><td>МУП Пущинская электрическая сеть</td><td>15.02.2016</td><td>500000</td></tr><tr><td>Аукцион</td><td>Монтаж инженерного оборудования зданий и сооружений</td><td>4873259</td><td>ООО Нефтегаз холдинг</td><td>19.01.2016</td><td>1500000</td></tr><tr><td>Аукцион</td><td>Приобретение светодиодного оборудования</td><td>1555486</td><td>МУП Пущинская электрическая сеть</td><td>15.02.2016</td><td>500000</td></tr><tr><td>Аукцион</td><td>Поставка серверного, сетевого оборудования, а также неисключительных прав на использование программного обеспечения в соответствии с требованиями технического задания и проекта договора</td><td>4646875</td><td>ООО Нефтегаз холдинг</td><td>18.03.2016</td><td>600000</td></tr><tr><td>Аукцион</td><td>Поставка серверного, сетевого оборудования, а также неисключительных прав на использование программного обеспечения в соответствии с требованиями технического задания и проекта договора</td><td>4646875</td><td>ООО Нефтегаз холдинг</td><td>18.03.2016</td><td>300000</td></tr><tr><td>Аукцион</td><td>Производство прочих транспортных средств и оборудования, не включенных в другие группировки</td><td>9834156</td><td>ООО Светлый город</td><td>21.05.2016</td><td>298000</td></tr><tr><td>Аукцион</td><td>Производство прочих транспортных средств и оборудования, не включенных в другие группировки</td><td>4873259</td><td>ООО Нефтегаз холдинг</td><td>19.01.2016</td><td>1500000</td></tr><tr><td>Аукцион</td><td>Приобретение светодиодного оборудования</td><td>1555486</td><td>МУП Пущинская электрическая сеть</td><td>15.02.2016</td><td>500000</td></tr><tr><td>Аукцион</td><td>Поставка серверного, сетевого оборудования, а также неисключительных прав на использование программного обеспечения в соответствии с требованиями технического задания и проекта договора</td><td>4646875</td><td>ООО Нефтегаз холдинг</td><td>18.03.2016</td><td>300000</td></tr><tr><td>Аукцион</td><td>Производство прочих транспортных средств и оборудования, не включенных в другие группировки</td><td>9834156</td><td>ООО Светлый город</td><td>21.05.2016</td><td>298000</td></tr><tr><td>Аукцион</td><td>Производство прочих транспортных средств и оборудования, не включенных в другие группировки</td><td>4873259</td><td>ООО Нефтегаз холдинг</td><td>19.01.2016</td><td>1500000</td></tr></table></div><div class="etp-search-pagination"><div class="group"><span class="etp-search-pagination__count">Найдено по запросу:  1212</span><div class="etp-search-pagination__set-quantity"><span class="etp-search-pagination__title">Показать:</span><div role="group" class="btn-group"><button type="button" class="btn etp-search-pagination__btn etp-search-pagination__btn_active">20</button><button type="button" class="btn etp-search-pagination__btn">50</button><button type="button" class="btn etp-search-pagination__btn">100</button></div></div></div><nav class="etp-search-pagination__pagination"><ul class="pagination"><li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li><li><a href="#">1</a></li><li><a href="#">2</a></li><li><a href="#">3</a></li><li><a href="#">4</a></li><li><a href="#">5</a></li><li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li></ul></nav></div></div><div class="col-md-4 hidden-sm hidden-xs"><div class="etp-search-result-filters"><div data-toggle="collapse" data-target="#idS7irn" class="etp-search-result-filters__header"><span>Подбор лотов</span></div><div id="idS7irn" class="etp-search-result-filters__content collapse in"><form class="etp-form form-horizontal"><div class="form-group"><div class="col-xs-12"><input type="text" placeholder="Наименование заказчика/Инн" class="etp-form__input-text form-control"></div></div><div class="form-group"><div class="col-xs-12"><input type="text" placeholder="Номер лота на площадке" class="etp-form__input-text form-control"></div></div><h5 class="etp-form__header">Цена</h5><div class="form-group"><div class="col-xs-6"><input type="text" placeholder="От" class="etp-form__input-text form-control"></div><div class="col-xs-6"><input type="text" placeholder="До" class="etp-form__input-text form-control"></div></div><div class="form-group"><div class="col-xs-12"><h5 class="etp-form__header">Способ закупки</h5></div><div class="col-xs-6"><label class="etp-form__label checkbox-inline"><input type="checkbox" class="etp-form__checkbox">Аукцион</label></div><div class="col-xs-6"><label class="etp-form__label checkbox-inline"><input type="checkbox" class="etp-form__checkbox">Запрос предложений   </label></div><div class="col-xs-6"><label class="etp-form__label checkbox-inline"><input type="checkbox" class="etp-form__checkbox">Конкурс</label></div><div class="col-xs-6"><label class="etp-form__label checkbox-inline"><input type="checkbox" class="etp-form__checkbox">Запрос цен</label></div></div><h5 class="etp-form__header">Обеспечение заявки</h5><div class="form-group"><div class="col-xs-6"><input type="text" placeholder="От" data-module="datepicker" class="etp-form__input-text form-control"></div><div class="col-xs-6"><input type="text" placeholder="До" data-module="datepicker" class="etp-form__input-text form-control"></div></div><h5 class="etp-form__header">Дата публикации</h5><div class="form-group"><div class="col-xs-6"><input type="text" placeholder="От" data-module="datepicker" class="etp-form__input-text form-control"></div><div class="col-xs-6"><input type="text" placeholder="До" data-module="datepicker" class="etp-form__input-text form-control"></div></div><h5 class="etp-form__header">Окончание приема заявок</h5><div class="form-group"><div class="col-xs-6"><input type="text" placeholder="От" data-module="datepicker" class="etp-form__input-text form-control"></div><div class="col-xs-6"><input type="text" placeholder="До" data-module="datepicker" class="etp-form__input-text form-control"></div></div><div class="form-group"><div class="col-xs-3"><button class="btn etp-form__btn etp-form__btn_ok">Показать</button></div><div class="col-xs-3 pull-right text-right"><button class="btn etp-form__btn etp-form__btn_cancel">Очистить</button></div></div></form></div></div></div></div></div></div><footer class="main-footer main-footer_hidden"></footer></div></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" data-main="js/main" src="js/require.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:200,500,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="main-header"><a href="#" class="header-logo"><img src="/img/logo.png" class="header-logo__img-lg"><img src="/img/logo-xs.png" class="header-logo__img-xs">
+          <h5 class="header-logo__site-title">Электронная торговая площадка</h5></a>
+        <div class="header-account"><img src="/img/james-stewart_s.jpg" class="header-account__image">
+          <div class="header-account__menu"><span>Соколов Д.В.</span>
+            <div><i class="fa fa-sign-out"></i><span>Выход</span></div>
+          </div>
+        </div>
+        <div class="header-time">
+          <h5><i class="fa fa-clock-o header-time__icon"></i>19:08  12 января 2016 г.</h5>
+        </div>
+      </header>
+      <aside class="sidebar"><a href="#" role="button-toggle" class="sidebar__toggle"><i class="fa fa-bars"></i></a>
+        <nav role="main-nenu" class="sidebar__menu">
+          <ul>
+            <li><a href="./index.html" class="side-menu-item"><i class="fa fa-home"></i><span>Главная</span></a></li>
+            <li><a href="./search-table.html" class="side-menu-item"><i class="fa fa-search"></i><span>Поиск закупок</span></a></li>
+            <li><a class="side-menu-item"><i class="fa fa-level-down"></i><span>Закупки</span></a></li>
+            <li><a class="side-menu-item"><i class="fa fa-level-up"></i><span>Продажи</span></a></li>
+            <li><a class="side-menu-item"><i class="fa fa-file"></i><span>Документы</span></a></li>
+            <li><a class="side-menu-item"><i class="fa fa-question-circle"></i><span>Обучение</span></a></li>
+            <li><a class="side-menu-item"><i class="fa fa-cog"></i><span>Настройки</span></a></li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="content content-search">
+        <div class="container-fluid">
+          <h3 class="content-header">Поиск закупок</h3>
+          <div class="row">
+            <div class="col-md-8 col-sm-12 col-xs-12">
+              <div class="etp-search-field">       
+                <div class="input-group">
+                  <input type="text" placeholder="Поиск закупок..." class="etp-search-field__input form-control"><span class="input-group-btn">
+                    <button type="button" class="btn btn-success etp-search-field__button">Найти &nbsp<i class="fa fa-search"></i></button></span>
+                </div>
+              </div>
+              <div class="hidden-md hidden-lg">
+                <div class="etp-search-result-filters">
+                  <div data-toggle="collapse" data-target="#idQxIlr" class="etp-search-result-filters__header"><span>Подбор лотов</span></div>
+                  <div id="idQxIlr" class="etp-search-result-filters__content collapse in">
+                    <form class="etp-form form-horizontal">
+                      <div class="form-group">
+                        <div class="col-xs-12">
+                          <input type="text" placeholder="Наименование заказчика/Инн" class="etp-form__input-text form-control">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-xs-12">
+                          <input type="text" placeholder="Номер лота на площадке" class="etp-form__input-text form-control">
+                        </div>
+                      </div>
+                      <h5 class="etp-form__header">Цена</h5>
+                      <div class="form-group">
+                        <div class="col-xs-6">
+                          <input type="text" placeholder="От" class="etp-form__input-text form-control">
+                        </div>
+                        <div class="col-xs-6">
+                          <input type="text" placeholder="До" class="etp-form__input-text form-control">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-xs-12">
+                          <h5 class="etp-form__header">Способ закупки</h5>
+                        </div>
+                        <div class="col-xs-6">
+                          <label class="etp-form__label checkbox-inline">
+                            <input type="checkbox" class="etp-form__checkbox">Аукцион
+                          </label>
+                        </div>
+                        <div class="col-xs-6">
+                          <label class="etp-form__label checkbox-inline">
+                            <input type="checkbox" class="etp-form__checkbox">Запрос предложений   
+                          </label>
+                        </div>
+                        <div class="col-xs-6">
+                          <label class="etp-form__label checkbox-inline">
+                            <input type="checkbox" class="etp-form__checkbox">Конкурс
+                          </label>
+                        </div>
+                        <div class="col-xs-6">
+                          <label class="etp-form__label checkbox-inline">
+                            <input type="checkbox" class="etp-form__checkbox">Запрос цен
+                          </label>
+                        </div>
+                      </div>
+                      <h5 class="etp-form__header">Обеспечение заявки</h5>
+                      <div class="form-group">
+                        <div class="col-xs-6">
+                          <input type="text" placeholder="От" data-module="datepicker" class="etp-form__input-text form-control">
+                        </div>
+                        <div class="col-xs-6">
+                          <input type="text" placeholder="До" data-module="datepicker" class="etp-form__input-text form-control">
+                        </div>
+                      </div>
+                      <h5 class="etp-form__header">Дата публикации</h5>
+                      <div class="form-group">
+                        <div class="col-xs-6">
+                          <input type="text" placeholder="От" data-module="datepicker" class="etp-form__input-text form-control">
+                        </div>
+                        <div class="col-xs-6">
+                          <input type="text" placeholder="До" data-module="datepicker" class="etp-form__input-text form-control">
+                        </div>
+                      </div>
+                      <h5 class="etp-form__header">Окончание приема заявок</h5>
+                      <div class="form-group">
+                        <div class="col-xs-6">
+                          <input type="text" placeholder="От" data-module="datepicker" class="etp-form__input-text form-control">
+                        </div>
+                        <div class="col-xs-6">
+                          <input type="text" placeholder="До" data-module="datepicker" class="etp-form__input-text form-control">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-xs-3">
+                          <button class="btn etp-form__btn etp-form__btn_ok">Показать</button>
+                        </div>
+                        <div class="col-xs-3 pull-right text-right">
+                          <button class="btn etp-form__btn etp-form__btn_cancel">Очистить</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="etp-search-result-sorting"><span class="etp-search-result-sorting__title">Сортировать по:</span><span class="etp-search-result-sorting__type">Цене</span>
+                <button class="etp-search-result-sorting__btn"><i class="fa fa-caret-down"></i></button><span class="etp-search-result-sorting__type">Названию</span>
+                <button class="etp-search-result-sorting__btn"><i class="fa fa-caret-up"></i></button>
+              </div>
+              <div class="etp-search-switch-view"><span class="etp-search-switch-view__title hidden-md hidden-sm hidden-xs">Показать:</span>
+                <div role="group" aria-label="..." class="btn-group"><a type="button" href="./search-table.html" class="btn etp-search-switch-view__btn etp-search-switch-view__btn_active">таблицей</a><a type="button" href="./search-list.html" class="btn etp-search-switch-view__btn">списком</a></div>
+              </div>
+              <div class="etp-search-result-table">
+                <table>
+                  <thead>
+                    <th>Процедура</th>
+                    <th>Наименование</th>
+                    <th>Номер</th>
+                    <th>Заказчик</th>
+                    <th>Окончание подачи</th>
+                    <th>Цена&nbsp<i class="fa fa-rub"></i></th>
+                  </thead>
+                  <tr>
+                    <td>Аукцион</td>
+                    <td>Приобретение светодиодного оборудования</td>
+                    <td>1555486</td>
+                    <td>МУП Пущинская электрическая сеть</td>
+                    <td>15.02.2016</td>
+                    <td>500000</td>
+                  </tr>
+                  <tr>
+                    <td>Аукцион</td>
+                    <td>Монтаж инженерного оборудования зданий и сооружений</td>
+                    <td>4873259</td>
+                    <td>ООО Нефтегаз холдинг</td>
+                    <td>19.01.2016</td>
+                    <td>1500000</td>
+                  </tr>
+                  <tr>
+                    <td>Аукцион</td>
+                    <td>Приобретение светодиодного оборудования</td>
+                    <td>1555486</td>
+                    <td>МУП Пущинская электрическая сеть</td>
+                    <td>15.02.2016</td>
+                    <td>500000</td>
+                  </tr>
+                  <tr>
+                    <td>Аукцион</td>
+                    <td>Поставка серверного, сетевого оборудования, а также неисключительных прав на использование программного обеспечения в соответствии с требованиями технического задания и проекта договора</td>
+                    <td>4646875</td>
+                    <td>ООО Нефтегаз холдинг</td>
+                    <td>18.03.2016</td>
+                    <td>600000</td>
+                  </tr>
+                  <tr>
+                    <td>Аукцион</td>
+                    <td>Поставка серверного, сетевого оборудования, а также неисключительных прав на использование программного обеспечения в соответствии с требованиями технического задания и проекта договора</td>
+                    <td>4646875</td>
+                    <td>ООО Нефтегаз холдинг</td>
+                    <td>18.03.2016</td>
+                    <td>300000</td>
+                  </tr>
+                  <tr>
+                    <td>Аукцион</td>
+                    <td>Производство прочих транспортных средств и оборудования, не включенных в другие группировки</td>
+                    <td>9834156</td>
+                    <td>ООО Светлый город</td>
+                    <td>21.05.2016</td>
+                    <td>298000</td>
+                  </tr>
+                  <tr>
+                    <td>Аукцион</td>
+                    <td>Производство прочих транспортных средств и оборудования, не включенных в другие группировки</td>
+                    <td>4873259</td>
+                    <td>ООО Нефтегаз холдинг</td>
+                    <td>19.01.2016</td>
+                    <td>1500000</td>
+                  </tr>
+                  <tr>
+                    <td>Аукцион</td>
+                    <td>Приобретение светодиодного оборудования</td>
+                    <td>1555486</td>
+                    <td>МУП Пущинская электрическая сеть</td>
+                    <td>15.02.2016</td>
+                    <td>500000</td>
+                  </tr>
+                  <tr>
+                    <td>Аукцион</td>
+                    <td>Поставка серверного, сетевого оборудования, а также неисключительных прав на использование программного обеспечения в соответствии с требованиями технического задания и проекта договора</td>
+                    <td>4646875</td>
+                    <td>ООО Нефтегаз холдинг</td>
+                    <td>18.03.2016</td>
+                    <td>300000</td>
+                  </tr>
+                  <tr>
+                    <td>Аукцион</td>
+                    <td>Производство прочих транспортных средств и оборудования, не включенных в другие группировки</td>
+                    <td>9834156</td>
+                    <td>ООО Светлый город</td>
+                    <td>21.05.2016</td>
+                    <td>298000</td>
+                  </tr>
+                  <tr>
+                    <td>Аукцион</td>
+                    <td>Производство прочих транспортных средств и оборудования, не включенных в другие группировки</td>
+                    <td>4873259</td>
+                    <td>ООО Нефтегаз холдинг</td>
+                    <td>19.01.2016</td>
+                    <td>1500000</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="etp-search-pagination">
+                <div class="group"><span class="etp-search-pagination__count">Найдено по запросу:  1212</span>
+                  <div class="etp-search-pagination__set-quantity"><span class="etp-search-pagination__title">Показать:</span>
+                    <div role="group" class="btn-group">
+                      <button type="button" class="btn etp-search-pagination__btn etp-search-pagination__btn_active">20</button>
+                      <button type="button" class="btn etp-search-pagination__btn">50</button>
+                      <button type="button" class="btn etp-search-pagination__btn">100</button>
+                    </div>
+                  </div>
+                </div>
+                <nav class="etp-search-pagination__pagination">
+                  <ul class="pagination">
+                    <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="col-md-4 hidden-sm hidden-xs">
+              <div class="etp-search-result-filters">
+                <div data-toggle="collapse" data-target="#idHYOMc" class="etp-search-result-filters__header"><span>Подбор лотов</span></div>
+                <div id="idHYOMc" class="etp-search-result-filters__content collapse in">
+                  <form class="etp-form form-horizontal">
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <input type="text" placeholder="Наименование заказчика/Инн" class="etp-form__input-text form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <input type="text" placeholder="Номер лота на площадке" class="etp-form__input-text form-control">
+                      </div>
+                    </div>
+                    <h5 class="etp-form__header">Цена</h5>
+                    <div class="form-group">
+                      <div class="col-xs-6">
+                        <input type="text" placeholder="От" class="etp-form__input-text form-control">
+                      </div>
+                      <div class="col-xs-6">
+                        <input type="text" placeholder="До" class="etp-form__input-text form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <h5 class="etp-form__header">Способ закупки</h5>
+                      </div>
+                      <div class="col-xs-6">
+                        <label class="etp-form__label checkbox-inline">
+                          <input type="checkbox" class="etp-form__checkbox">Аукцион
+                        </label>
+                      </div>
+                      <div class="col-xs-6">
+                        <label class="etp-form__label checkbox-inline">
+                          <input type="checkbox" class="etp-form__checkbox">Запрос предложений   
+                        </label>
+                      </div>
+                      <div class="col-xs-6">
+                        <label class="etp-form__label checkbox-inline">
+                          <input type="checkbox" class="etp-form__checkbox">Конкурс
+                        </label>
+                      </div>
+                      <div class="col-xs-6">
+                        <label class="etp-form__label checkbox-inline">
+                          <input type="checkbox" class="etp-form__checkbox">Запрос цен
+                        </label>
+                      </div>
+                    </div>
+                    <h5 class="etp-form__header">Обеспечение заявки</h5>
+                    <div class="form-group">
+                      <div class="col-xs-6">
+                        <input type="text" placeholder="От" data-module="datepicker" class="etp-form__input-text form-control">
+                      </div>
+                      <div class="col-xs-6">
+                        <input type="text" placeholder="До" data-module="datepicker" class="etp-form__input-text form-control">
+                      </div>
+                    </div>
+                    <h5 class="etp-form__header">Дата публикации</h5>
+                    <div class="form-group">
+                      <div class="col-xs-6">
+                        <input type="text" placeholder="От" data-module="datepicker" class="etp-form__input-text form-control">
+                      </div>
+                      <div class="col-xs-6">
+                        <input type="text" placeholder="До" data-module="datepicker" class="etp-form__input-text form-control">
+                      </div>
+                    </div>
+                    <h5 class="etp-form__header">Окончание приема заявок</h5>
+                    <div class="form-group">
+                      <div class="col-xs-6">
+                        <input type="text" placeholder="От" data-module="datepicker" class="etp-form__input-text form-control">
+                      </div>
+                      <div class="col-xs-6">
+                        <input type="text" placeholder="До" data-module="datepicker" class="etp-form__input-text form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-xs-3">
+                        <button class="btn etp-form__btn etp-form__btn_ok">Показать</button>
+                      </div>
+                      <div class="col-xs-3 pull-right text-right">
+                        <button class="btn etp-form__btn etp-form__btn_cancel">Очистить</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="main-footer"></footer>
+    </div>
+  </body>
+</html>

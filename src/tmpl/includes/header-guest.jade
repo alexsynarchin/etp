@@ -6,9 +6,10 @@
                     img.header-logo__img-lg(src="#{logoUrlLg}")
                     img.header-logo__img-xs(src="#{logoUrlXs}")
                     h5.header-logo__site-title= siteTitle
-            div.col-xs-12.col-sm-6.pull-right.header-login.text-right
-                button.btn.etp-form__btn_ok Войти
-                button.btn.etp-form__btn_ok Зарегистрироваться
+            div.col-xs-12.col-sm-6.pull-right.header-contacts.text-right
+                span.fa.fa-phone
+                span.phone-gp 8-800-200-4444
+                div.phone-gp-text круглосуточная техническая поддержка
 nav.navbar.etp-nav-gp
     div.container
             div.row
@@ -34,8 +35,9 @@ nav.navbar.etp-nav-gp
                     ul.nav.navbar-nav.navbar-right
                         li(class="active")
                             a
-                                span.fa.fa-envelope
+                                span.fa.fa-sign-in
+                                span Войти
                         li
                             a
-                                span.fa.fa-phone
-                                span 8-800-200-4444
+                                span.fa.fa-check-square-o
+                                span Зарегистрироваться

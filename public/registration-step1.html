@@ -1,4 +1,85 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><script type="text/javascript" data-main="js/main" src="js/require.js"></script><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><link href="https://fonts.googleapis.com/css?family=Exo+2:200,500,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css"><link rel="stylesheet" href="css/main.css"><link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css"></head><body><div class="wrapper"><header class="main-header"><a href="#" class="header-logo"><img src="/img/logo.png" class="header-logo__img-lg"><img src="/img/logo-xs.png" class="header-logo__img-xs"><h5 class="header-logo__site-title">Электронная торговая площадка</h5></a><div class="header-account"><img src="/img/james-stewart_s.jpg" class="header-account__image"><div class="header-account__menu"><span>Соколов Д.В.</span><div><i class="fa fa-sign-out"></i><span>Выход</span></div></div></div><div class="header-time"><h5><i class="fa fa-clock-o header-time__icon"></i>19:08  12 января 2016 г.</h5></div></header><aside class="sidebar"><a href="#" role="button-toggle" class="sidebar__toggle"><i class="fa fa-bars"></i></a><nav role="main-nenu" class="sidebar__menu"><ul><li><a href="./index.html" class="side-menu-item"><i class="fa fa-home"></i><span>Главная</span></a></li><li><a href="./search-table.html" class="side-menu-item"><i class="fa fa-search"></i><span>Поиск закупок</span></a></li><li><a class="side-menu-item"><i class="fa fa-level-down"></i><span>Закупки</span></a></li><li><a class="side-menu-item"><i class="fa fa-level-up"></i><span>Продажи</span></a></li><li><a class="side-menu-item"><i class="fa fa-file"></i><span>Документы</span></a></li><li><a class="side-menu-item"><i class="fa fa-question-circle"></i><span>Обучение</span></a></li><li><a class="side-menu-item"><i class="fa fa-cog"></i><span>Настройки</span></a></li></ul></nav></aside><script>function redirect(){
-    window.location.replace("/registration.html");
-    return false;
-}</script><div class="content"><div class="container-fluid"><div class="row"><div class="col-sm-hidden col-md-2"></div><div class="col-sm-12 col-md-8"><h3 class="content-header">Регистрация Пользователя. Шаг 1</h3><form class="etp-form form-horizontal"><fieldset><legend class="etp-form__legend"><span>Организационно-правовая форма</span></legend><div class="form-group"><div class="col-xs-12"><label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" class="etp-form__radio">Юридическое лицо</label></div><div class="col-xs-12"><label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" class="etp-form__radio">Индивидуальный предприниматель</label></div><div class="col-xs-12"><label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" class="etp-form__radio">Физическое лицо</label></div></div><div class="form-group"><div class="col-xs-3 pull-right text-right"><button onclick="return redirect()" class="btn etp-form__btn etp-form__btn_ok">Продолжить<span class="glyphicon glyphicon-chevron-right"></span></button></div></div></fieldset></form></div><div class="col-sm-hidden col-md-2"></div></div></div></div><footer class="main-footer main-footer_hidden"></footer></div></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" data-main="js/main" src="js/require.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:200,500,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="main-header"><a href="#" class="header-logo"><img src="/img/logo.png" class="header-logo__img-lg"><img src="/img/logo-xs.png" class="header-logo__img-xs">
+          <h5 class="header-logo__site-title">Электронная торговая площадка</h5></a>
+        <div class="header-account"><img src="/img/james-stewart_s.jpg" class="header-account__image">
+          <div class="header-account__menu"><span>Соколов Д.В.</span>
+            <div><i class="fa fa-sign-out"></i><span>Выход</span></div>
+          </div>
+        </div>
+        <div class="header-time">
+          <h5><i class="fa fa-clock-o header-time__icon"></i>19:08  12 января 2016 г.</h5>
+        </div>
+      </header>
+      <aside class="sidebar"><a href="#" role="button-toggle" class="sidebar__toggle"><i class="fa fa-bars"></i></a>
+        <nav role="main-nenu" class="sidebar__menu">
+          <ul>
+            <li><a href="./index.html" class="side-menu-item"><i class="fa fa-home"></i><span>Главная</span></a></li>
+            <li><a href="./search-table.html" class="side-menu-item"><i class="fa fa-search"></i><span>Поиск закупок</span></a></li>
+            <li><a class="side-menu-item"><i class="fa fa-level-down"></i><span>Закупки</span></a></li>
+            <li><a class="side-menu-item"><i class="fa fa-level-up"></i><span>Продажи</span></a></li>
+            <li><a class="side-menu-item"><i class="fa fa-file"></i><span>Документы</span></a></li>
+            <li><a class="side-menu-item"><i class="fa fa-question-circle"></i><span>Обучение</span></a></li>
+            <li><a class="side-menu-item"><i class="fa fa-cog"></i><span>Настройки</span></a></li>
+          </ul>
+        </nav>
+      </aside>
+      <script>
+        function redirect(){
+            window.location.replace("/registration.html");
+            return false;
+        }
+      </script>
+      <div class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-hidden col-md-2"></div>
+            <div class="col-sm-12 col-md-8">
+              <h3 class="content-header">Регистрация Пользователя. Шаг 1</h3>
+              <form class="etp-form form-horizontal">
+                <fieldset>
+                  <legend class="etp-form__legend"><span>Организационно-правовая форма</span></legend>
+                  <div class="form-group">
+                    <div class="col-xs-12">
+                      <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" class="etp-form__radio">Юридическое лицо
+                      </label>
+                    </div>
+                    <div class="col-xs-12">
+                      <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" class="etp-form__radio">Индивидуальный предприниматель
+                      </label>
+                    </div>
+                    <div class="col-xs-12">
+                      <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" class="etp-form__radio">Физическое лицо
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-xs-3 pull-right text-right">
+                      <button onclick="return redirect()" class="btn etp-form__btn etp-form__btn_ok">Продолжить<span class="glyphicon glyphicon-chevron-right"></span></button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <div class="col-sm-hidden col-md-2"></div>
+          </div>
+        </div>
+      </div>
+      <footer class="main-footer"></footer>
+    </div>
+  </body>
+</html>
