@@ -58,7 +58,7 @@ gulp.task('scss', function() {
 /*build html*/
 gulp.task('html', function() {
     gulp.src('./src/tmpl/*.jade')
-    .pipe(jade())
+    .pipe(jade({pretty: true}))
     .pipe(gulp.dest('./public/'));
 });
 
